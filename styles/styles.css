@@ -117,7 +117,98 @@ body {
     background-color: #0066cc; /* Azul más claro */
     transform: scale(1.1); /* Zoom al pasar el mouse */
 }
+/* Estilos para el botón flotante de volver arriba */
+#back-to-top {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100; /* Asegurarse de que esté por encima de otros elementos */
+    border: none;
+    outline: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
 
+#back-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el botón flotante de volver atrás o a la página de inicio */
+#go-back {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    z-index: 100; /* Asegurarse de que esté por encima de otros elementos */
+    border: none;
+    outline: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+/* Estilos para el botón flotante de volver arriba */
+#back-to-top {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100; /* Asegurarse de que esté por encima de otros elementos */
+    border: none;
+    outline: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#back-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el botón flotante de volver atrás o a la página de inicio */
+#go-back {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    z-index: 100; /* Asegurarse de que esté por encima de otros elementos */
+    border: none;
+    outline: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#go-back:hover {
+    background-color: #0056b3;
+}
+
+#go-back:hover {
+    background-color: #0056b3;
+}
+#go-back:hover {
+    background-color: #0056b3;
+}
+
+#back-to-top:hover {
+    background-color: #0056b3;
+}
+#back-to-top:hover {
+    background-color: #0056b3;
+}
 /* --------------------- */
 /* REJILLA DE SERVICIOS */
 /* --------------------- */

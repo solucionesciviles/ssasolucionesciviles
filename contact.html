@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto - SSA Soluciones Civiles">
+    <meta name="keywords" content="SSA Soluciones Civiles, Contacto, Ingeniería Civil">
+    <meta name="author" content="SSA Soluciones Civiles">
     <title>Contacto - SSA Soluciones Civiles</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animations.css">
 </head>
 <body>
-    <header class="fade-in">
+    <header class="fade-in" aria-label="Barra de Navegación">
         <nav class="nav-bar slide-in-top">
             <ul>
                 <li><a href="index.html" class="hover-grow">Inicio</a></li>
@@ -36,7 +39,7 @@
         </section>
 
         <!-- Información de Contacto -->
-        <section id="contact-info" class="fade-in">
+        <section id="contact-info" class="fade-in" aria-label="Información de Contacto">
             <h2 class="slide-in-bottom">Información de Contacto</h2>
             <div class="contact-card">
                 <p><strong>Dirección:</strong> Calle Falsa 123, Medellín, Colombia</p>
@@ -47,7 +50,7 @@
         </section>
 
         <!-- Formulario de Contacto -->
-        <section id="contact-form" class="fade-in">
+        <section id="contact-form" class="fade-in" aria-label="Formulario de Contacto">
             <h2 class="slide-in-bottom">Envíanos un Mensaje</h2>
             <p class="fade-in-left">Si tienes alguna consulta o necesitas más información, no dudes en contactarnos.</p>
             <form>
@@ -62,13 +65,13 @@
         </section>
 
         <!-- Ubicación en el Mapa -->
-        <section id="map" class="fade-in">
+        <section id="map" class="fade-in" aria-label="Ubicación en el Mapa">
             <h2 class="slide-in-bottom">Nuestra Ubicación</h2>
             <p class="fade-in-right">Encuéntranos en nuestras oficinas principales en Medellín, Colombia.</p>
             <div class="map-container zoom-in">
                 <!-- Inserta un iframe de Google Maps aquí -->
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2947422711623!2d-75.56359028456717!3d6.251839695482369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44291a2e9a9e15%3A0x2df78247c8db212f!2sCalle%20Falsa%20123%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1612318020648!5m2!1ses!2sco"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2947422711623!2d-75.56359028456717!3d6.251839695482369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442[...]
                     width="100%"
                     height="300"
                     style="border:0;"
@@ -79,7 +82,7 @@
         </section>
 
         <!-- Preguntas Frecuentes -->
-        <section id="faq" class="fade-in">
+        <section id="faq" class="fade-in" aria-label="Preguntas Frecuentes">
             <h2 class="slide-in-bottom">Preguntas Frecuentes</h2>
             <details class="fade-in-right">
                 <summary>¿Cuánto tiempo tarda en responder el equipo?</summary>
@@ -99,5 +102,13 @@
     <footer>
         <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Botón flotante para volver arriba -->
+    <button id="back-to-top" title="Volver arriba">↑</button>
+
+    <!-- Botón flotante para volver a la página de servicios -->
+    <button id="go-back" title="Volver a Servicios">←</button>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
