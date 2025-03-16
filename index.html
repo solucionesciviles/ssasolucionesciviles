@@ -3,134 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SSA Soluciones Civiles - Expertos en construcción, geotecnia, remodelación e intervención estructural.">
-    <meta name="keywords" content="construcción, geotecnia, remodelación, intervención estructural">
+    <meta name="description" content="Página principal - SSA Soluciones Civiles">
+    <meta name="keywords" content="SSA Soluciones Civiles, Ingeniería Civil, Construcción">
     <meta name="author" content="SSA Soluciones Civiles">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trusted.cdn.com;">
-    <title>SSA Soluciones Civiles</title>
+    <title>Inicio - SSA Soluciones Civiles</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
 <body>
-    <!-- Barra de Navegación -->
     <header class="fade-in" aria-label="Barra de Navegación">
-        <div class="nav-bar slide-in-top">
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="hover-grow active" aria-label="Inicio">Inicio</a></li>
-                    <li><a href="about.html" class="hover-grow" aria-label="Sobre Nosotros">Sobre Nosotros</a></li>
-                    <li><a href="services.html" class="hover-grow" aria-label="Servicios">Servicios</a></li>
-                    <li><a href="contact.html" class="hover-grow" aria-label="Contacto">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">SSA Soluciones Civiles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
                 </ul>
-            </nav>
-        </div>
-
-        <!-- Logo y texto debajo de la barra -->
-        <div class="logo-text">
-            <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo">
-            <h1>SSA Soluciones Civiles</h1>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Sección del Héroe -->
+    <!-- Logo y texto debajo de la barra -->
+    <div class="logo-text text-center mt-5">
+        <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo">
+        <h1>Bienvenidos a SSA Soluciones Civiles</h1>
+    </div>
+
     <main>
-        <section id="hero" class="fade-in hero-section" aria-label="Sección del Héroe">
+        <!-- Sección del Héroe -->
+        <section id="hero" class="fade-in hero-section text-center">
             <div class="hero-overlay zoom-in">
                 <h2 class="slide-in-bottom">Construimos el Futuro</h2>
-                <p class="slide-in-bottom">Expertos en construcción, geotecnia, remodelación e intervención estructural.</p>
-                <a href="about.html" class="btn btn-primary pulse" aria-label="Conócenos">Conócenos</a>
+                <p class="slide-in-bottom">Soluciones integrales en ingeniería civil para proyectos de cualquier escala.</p>
+                <a href="services.html" class="btn btn-primary pulse">Descubre nuestros servicios</a>
             </div>
         </section>
 
-        <!-- Sección de Servicios -->
-        <section id="services-highlights" class="fade-in" aria-label="Sección de Servicios">
-            <h2 class="slide-in-bottom">Nuestros Servicios</h2>
-            <div class="highlights-grid">
-                <div class="highlight slide-in-bottom">
-                    <h3>Construcción</h3>
-                    <p>Proyectos de alta calidad con equipos especializados.</p>
-                    <a href="construction.html" class="btn btn-secondary hover-grow" aria-label="Leer Más sobre Construcción">Leer Más</a>
-                </div>
-                <div class="highlight slide-in-bottom">
-                    <h3>Geotecnia</h3>
-                    <p>Estudios avanzados para garantizar estabilidad y seguridad.</p>
-                    <a href="geotech.html" class="btn btn-secondary hover-grow" aria-label="Leer Más sobre Geotecnia">Leer Más</a>
-                </div>
-                <div class="highlight slide-in-bottom">
-                    <h3>Remodelación</h3>
-                    <p>Transformamos espacios para cumplir tus expectativas.</p>
-                    <a href="remodel.html" class="btn btn-secondary hover-grow" aria-label="Leer Más sobre Remodelación">Leer Más</a>
-                </div>
-                <div class="highlight slide-in-bottom">
-                    <h3>Análisis Patológico</h3>
-                    <p>Diagnóstico y soluciones estructurales efectivas.</p>
-                    <a href="pathology.html" class="btn btn-secondary hover-grow" aria-label="Leer Más sobre Análisis Patológico">Leer Más</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Proyectos -->
-        <section id="projects" class="fade-in" aria-label="Sección de Proyectos">
-            <h2 class="fade-in">Nuestros Proyectos</h2>
-            <p class="fade-in">Descubre algunos de nuestros proyectos destacados que reflejan nuestro compromiso con la calidad y la excelencia:</p>
-            <div class="projects-grid">
-                <div class="project-item fade-in-left">
-                    <img src="assets/images/project1.jpg" alt="Proyecto de edificio corporativo">
-                    <h3>Edificio Corporativo</h3>
-                    <p>Diseño y construcción de un edificio de oficinas moderno y sostenible.</p>
-                </div>
-                <div class="project-item fade-in-right">
-                    <img src="assets/images/project2.jpg" alt="Proyecto de puente vehicular">
-                    <h3>Puente Vehicular</h3>
-                    <p>Obra de infraestructura para mejorar la conectividad regional.</p>
-                </div>
-                <div class="project-item fade-in-left">
-                    <img src="assets/images/project3.jpg" alt="Proyecto de remodelación residencial">
-                    <h3>Remodelación Residencial</h3>
-                    <p>Renovación de viviendas con diseños personalizados y acabados de alta calidad.</p>
+        <!-- Servicios Destacados -->
+        <section id="featured-services" class="fade-in py-5">
+            <div class="container">
+                <h2 class="slide-in-bottom text-center">Nuestros Servicios</h2>
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <div class="service-item">
+                            <h3>Construcción</h3>
+                            <p>Proyectos de construcción que combinan diseño innovador, materiales de alta calidad y ejecución eficiente.</p>
+                            <a href="construction.html" class="btn btn-secondary">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="service-item">
+                            <h3>Geotecnia</h3>
+                            <p>Estudios y análisis geotécnicos para asegurar la estabilidad de tus proyectos desde el principio.</p>
+                            <a href="geotech.html" class="btn btn-secondary">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="service-item">
+                            <h3>Remodelación</h3>
+                            <p>Transformamos tus espacios en lugares modernos y funcionales con atención a cada detalle.</p>
+                            <a href="remodel.html" class="btn btn-secondary">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="service-item">
+                            <h3>Análisis Patológico</h3>
+                            <p>Identificación y reparación de patologías estructurales para garantizar la seguridad de tus edificaciones.</p>
+                            <a href="pathology.html" class="btn btn-secondary">Leer más</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección de Noticias -->
-        <section id="news-links" class="fade-in" aria-label="Sección de Noticias">
-            <h2 class="slide-in-bottom">Noticias y Referencias</h2>
-            <div class="news-grid">
-                <div class="news-item zoom-in">
-                    <img src="assets/images/news1.jpg" alt="Proyectos en geotecnia">
-                    <a href="https://ejemplo-noticia1.com" target="_blank" class="hover-grow" aria-label="Leer sobre proyectos en geotecnia">Cómo avanzan los proyectos en geotecnia</a>
+        <!-- Testimonios -->
+        <section id="testimonials" class="fade-in py-5 bg-light">
+            <div class="container">
+                <h2 class="slide-in-bottom text-center">Lo que dicen nuestros clientes</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial text-center">
+                            <p>"SSA Soluciones Civiles transformó completamente nuestra oficina, estamos muy contentos con el resultado."</p>
+                            <p><strong>- Cliente Satisfecho</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial text-center">
+                            <p>"El equipo de SSA es muy profesional y atento a los detalles. Recomiendo sus servicios."</p>
+                            <p><strong>- Empresa XYZ</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial text-center">
+                            <p>"Gracias a SSA Soluciones Civiles, nuestro proyecto fue un éxito total."</p>
+                            <p><strong>- Cliente Contento</strong></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="news-item zoom-in">
-                    <img src="assets/images/news2.jpg" alt="Remodelaciones modernas">
-                    <a href="https://ejemplo-noticia2.com" target="_blank" class="hover-grow" aria-label="Leer sobre remodelaciones modernas">Innovaciones en remodelaciones modernas</a>
-                </div>
-                <div class="news-item zoom-in">
-                    <img src="assets/images/news3.jpg" alt="Soluciones sostenibles">
-                    <a href="https://ejemplo-noticia3.com" target="_blank" class="hover-grow" aria-label="Leer sobre soluciones sostenibles">Impacto de las soluciones sostenibles en la construcción</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Contacto -->
-        <section id="contact-info" class="fade-in" aria-label="Sección de Contacto">
-            <h2 class="slide-in-top">Datos de Contacto</h2>
-            <div class="contact-card zoom-in">
-                <p><strong>Dirección:</strong> Calle Falsa 123, Medellín, Colombia</p>
-                <p><strong>Teléfono:</strong> +57 123 456 7890</p>
-                <p><strong>Email:</strong> contacto@ssasolutions.com</p>
-                <p><strong>Horario:</strong> Lunes a Viernes, 8:00 AM - 6:00 PM</p>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="fade-in" aria-label="Pie de página">
-        <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+    <footer class="text-center py-4">
+        <div class="container">
+            <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <!-- Botón flotante para volver arriba -->
     <button id="back-to-top" title="Volver arriba">↑</button>
 
+    <!-- Botón flotante para volver a la página de servicios -->
+    <button id="go-back" title="Volver a Servicios">←</button>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>
