@@ -1,0 +1,237 @@
+/* --------------------- */
+/* GENERAL STYLES */
+/* --------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* --------------------- */
+/* BARRA DE NAVEGACIÓN FIJA */
+/* --------------------- */
+.nav-bar {
+    background: linear-gradient(to right, #004578, #0066cc); /* Degradado azul */
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Transición suave al hacer scroll */
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+.nav-bar ul li a:hover {
+    color: #ffff99; /* Amarillo claro al pasar el mouse */
+    transform: scale(1.1); /* Zoom ligero */
+    text-shadow: 0 2px 5px rgba(255, 255, 255, 0.7); /* Sombra de texto */
+}
+
+/* --------------------- */
+/* SECCIÓN DEL HÉROE */
+/* --------------------- */
+.hero-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+                url('../assets/images/hero-background.jpg') no-repeat center center/cover;
+    background-blend-mode: overlay; /* Combina la imagen y el gradiente */
+    color: white;
+    text-align: center;
+    padding: 120px 20px; /* Espacio vertical */
+    position: relative;
+    margin-top: 80px; /* Se asegura de estar justo debajo de la barra azul */
+}
+
+.hero-text {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre el título y el contenido */
+}
+
+.hero-text h1 {
+    font-size: 3rem; /* Título destacado */
+    color: #ffffff; /* Blanco para contraste */
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px; /* Espacio con respecto al título */
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+/* --------------------- */
+/* BOTONES GENERALES */
+/* --------------------- */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004578;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0066cc; /* Azul más claro */
+    transform: scale(1.1); /* Zoom al pasar el mouse */
+}
+
+/* --------------------- */
+/* REJILLA DE SERVICIOS */
+/* --------------------- */
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Rejilla responsiva */
+    gap: 20px;
+    padding: 20px;
+}
+
+.highlight {
+    background-color: #f5f5f5;
+    border: 2px solid #004578; /* Azul oscuro */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.highlight h3 {
+    margin: 10px 0;
+    color: #004578; /* Azul oscuro */
+}
+
+.highlight p {
+    color: #666;
+}
+
+/* --------------------- */
+/* SECCIÓN DE PROYECTOS */
+/* --------------------- */
+#projects {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #ffffff, #e0f7fa); /* Degradado blanco a azul claro */
+    text-align: center;
+}
+
+#projects h2 {
+    color: #004578; /* Azul oscuro */
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Rejilla adaptable */
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #f0f8ff; /* Fondo azul claro */
+    border: 2px solid #004578; /* Azul oscuro */
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    color: #666;
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Efecto de aumento */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra profunda */
+}
+
+/* --------------------- */
+/* SECCIÓN DE CONTACTO */
+/* --------------------- */
+.contact-card {
+    background-color: #e3f2fd; /* Azul claro */
+    border: 2px solid #004578; /* Azul oscuro */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-card p {
+    margin: 10px 0;
+    color: #004578; /* Azul oscuro */
+}
+
+/* --------------------- */
+/* PIE DE PÁGINA */
+/* --------------------- */
+footer {
+    background-color: #004578;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}

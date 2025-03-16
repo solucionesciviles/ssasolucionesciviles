@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - SSA Soluciones Civiles</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <header class="fade-in">
+        <nav class="nav-bar slide-in-top">
+            <ul>
+                <li><a href="index.html" class="hover-grow">Inicio</a></li>
+                <li><a href="about.html" class="hover-grow">Sobre Nosotros</a></li>
+                <li><a href="services.html" class="hover-grow">Servicios</a></li>
+                <li><a href="contact.html" class="hover-grow active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Logo y texto debajo de la barra -->
+    <div class="logo-text">
+        <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo">
+        <h1>Contacto</h1>
+    </div>
+
+    <main>
+        <!-- Sección del Héroe -->
+        <section id="hero" class="fade-in hero-section">
+            <div class="hero-overlay zoom-in">
+                <h2 class="slide-in-bottom">Estamos Aquí Para Ayudarte</h2>
+                <p class="slide-in-bottom">Contáctanos para cualquier consulta, proyecto o información adicional.</p>
+                <a href="#contact-form" class="btn btn-primary pulse">Escríbenos</a>
+            </div>
+        </section>
+
+        <!-- Información de Contacto -->
+        <section id="contact-info" class="fade-in">
+            <h2 class="slide-in-bottom">Información de Contacto</h2>
+            <div class="contact-card">
+                <p><strong>Dirección:</strong> Calle Falsa 123, Medellín, Colombia</p>
+                <p><strong>Teléfono:</strong> +57 123 456 7890</p>
+                <p><strong>Email:</strong> contacto@ssasolutions.com</p>
+                <p><strong>Horario:</strong> Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contact-form" class="fade-in">
+            <h2 class="slide-in-bottom">Envíanos un Mensaje</h2>
+            <p class="fade-in-left">Si tienes alguna consulta o necesitas más información, no dudes en contactarnos.</p>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required class="zoom-in">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required class="zoom-in">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required class="zoom-in"></textarea>
+                <button type="submit" class="btn btn-primary pulse">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Ubicación en el Mapa -->
+        <section id="map" class="fade-in">
+            <h2 class="slide-in-bottom">Nuestra Ubicación</h2>
+            <p class="fade-in-right">Encuéntranos en nuestras oficinas principales en Medellín, Colombia.</p>
+            <div class="map-container zoom-in">
+                <!-- Inserta un iframe de Google Maps aquí -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2947422711623!2d-75.56359028456717!3d6.251839695482369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44291a2e9a9e15%3A0x2df78247c8db212f!2sCalle%20Falsa%20123%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1612318020648!5m2!1ses!2sco"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes -->
+        <section id="faq" class="fade-in">
+            <h2 class="slide-in-bottom">Preguntas Frecuentes</h2>
+            <details class="fade-in-right">
+                <summary>¿Cuánto tiempo tarda en responder el equipo?</summary>
+                <p>Generalmente respondemos dentro de las 24 horas hábiles.</p>
+            </details>
+            <details class="fade-in-right">
+                <summary>¿Tienen sucursales en otras ciudades?</summary>
+                <p>Por ahora, operamos desde Medellín, pero trabajamos en proyectos a nivel nacional.</p>
+            </details>
+            <details class="fade-in-right">
+                <summary>¿Cómo puedo agendar una reunión?</summary>
+                <p>Puedes enviarnos un mensaje a través del formulario o llamarnos para coordinar una cita.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

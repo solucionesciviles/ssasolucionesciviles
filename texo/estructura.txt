@@ -1,0 +1,32 @@
+/proyecto
+  ├── /assets
+  │     ├── /images
+  │     │     ├── hero-background.jpg
+  │     │     ├── news1.jpg
+  │     │     ├── news2.jpg
+  │     │     ├── news3.jpg
+  │     │     ├── project1.jpg
+  │     │     ├── project2.jpg
+  │     │     ├── project3.jpg
+  │     │     ├── about-us.jpg
+  │     │     ├── construction.jpg
+  │     │     ├── geotech.jpg
+  │     │     ├── pathology.jpg
+  │     │     └── remodel.jpg
+  │     └── /fonts
+  │
+  ├── /scripts
+  │     └── script.js
+  │
+  ├── /styles
+  │     ├── styles.css
+  │     └── animations.css
+  │
+  ├── index.html
+  ├── about.html
+  ├── contact.html
+  ├── services.html
+  ├── construction.html
+  ├── geotech.html
+  ├── pathology.html
+  └── remodel.html
