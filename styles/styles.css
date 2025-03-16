@@ -138,44 +138,7 @@ body {
     background-color: #0056b3;
 }
 
-/* Estilos para el botón flotante de volver atrás o a la página de inicio */
-#go-back {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    bottom: 20px;
-    right: 80px;
-    z-index: 100; /* Asegurarse de que esté por encima de otros elementos */
-    border: none;
-    outline: none;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-/* Estilos para el botón flotante de volver arriba */
-#back-to-top {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 100; /* Asegurarse de que esté por encima de otros elementos */
-    border: none;
-    outline: none;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-#back-to-top:hover {
-    background-color: #0056b3;
-}
-
-/* Estilos para el botón flotante de volver atrás o a la página de inicio */
+/* Estilos para el botón flotante de volver a la página de servicios */
 #go-back {
     display: none; /* Oculto por defecto */
     position: fixed;
@@ -196,18 +159,37 @@ body {
     background-color: #0056b3;
 }
 
-#go-back:hover {
-    background-color: #0056b3;
-}
-#go-back:hover {
-    background-color: #0056b3;
+/* Estilos adicionales */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
 }
 
-#back-to-top:hover {
-    background-color: #0056b3;
+.navbar {
+    margin-bottom: 0;
 }
-#back-to-top:hover {
-    background-color: #0056b3;
+
+.hero-section {
+    background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 /* --------------------- */
 /* REJILLA DE SERVICIOS */
