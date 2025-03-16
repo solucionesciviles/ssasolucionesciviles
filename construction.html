@@ -4,126 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Construcción - SSA Soluciones Civiles">
-    <meta name="keywords" content="SSA Soluciones Civiles, Construcción, Ingeniería Civil">
+    <meta name="keywords" content="SSA Soluciones Civiles, Ingeniería Civil, Construcción">
     <meta name="author" content="SSA Soluciones Civiles">
     <title>Construcción - SSA Soluciones Civiles</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
 <body>
     <header class="fade-in" aria-label="Barra de Navegación">
-        <nav class="nav-bar slide-in-top">
-            <ul>
-                <li><a href="index.html" class="hover-grow">Inicio</a></li>
-                <li><a href="services.html" class="hover-grow active">Servicios</a></li>
-                <li><a href="contact.html" class="hover-grow">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">SSA Soluciones Civiles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <!-- Logo y texto debajo de la barra -->
-    <div class="logo-text">
-        <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo">
-        <h1>Construcción</h1>
-    </div>
-
     <main>
-        <!-- Sección del Héroe -->
-        <section id="hero" class="fade-in hero-section">
-            <div class="hero-overlay zoom-in">
-                <h2 class="slide-in-bottom">Construimos el Futuro</h2>
-                <p class="slide-in-bottom">Expertos en construcción, y proyectos que dan vida a tu vida.</p>
-                <a href="about.html" class="btn btn-primary pulse">Conócenos</a>
+        <!-- Sección Construcción -->
+        <section id="construction" class="fade-in py-5">
+            <div class="container">
+                <h2 class="slide-in-bottom text-center">Construcción</h2>
+                <p class="slide-in-bottom text-center">Proyectos de construcción que combinan diseño innovador, materiales de alta calidad y ejecución eficiente.</p>
             </div>
-        </section>
-
-        <!-- Servicios Específicos de Construcción -->
-        <section id="specific-services" class="fade-in" aria-label="Servicios Específicos de Construcción">
-            <h2 class="slide-in-bottom">Servicios Específicos</h2>
-            <p class="fade-in-right">Ofrecemos una gama completa de servicios en construcción:</p>
-            <ul class="highlight-list">
-                <li class="fade-in-left">Diseño de Estructuras Personalizadas</li>
-                <li class="fade-in-left">Proyectos Residenciales y Comerciales</li>
-                <li class="fade-in-left">Ampliaciones y Nuevas Construcciones</li>
-                <li class="fade-in-left">Supervisión de Obra y Garantía de Calidad</li>
-            </ul>
-        </section>
-
-        <!-- Materiales Sostenibles -->
-        <section id="sustainable-materials" class="fade-in" aria-label="Materiales Sostenibles">
-            <h2 class="slide-in-bottom">Materiales Sostenibles</h2>
-            <div class="materials-grid">
-                <div class="material-item">
-                    <img src="assets/images/sustainable1.jpg" alt="Material Sostenible 1">
-                    <h3>Concreto Reciclado</h3>
-                    <p>Usamos concreto de alta resistencia, fabricado con componentes reciclados para reducir el impacto ambiental.</p>
-                </div>
-                <div class="material-item">
-                    <img src="assets/images/sustainable2.jpg" alt="Material Sostenible 2">
-                    <h3>Madera Certificada</h3>
-                    <p>Madera obtenida de bosques sostenibles, garantizando la reforestación.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Beneficios de la Construcción Moderna -->
-        <section id="modern-construction" class="fade-in" aria-label="Beneficios de la Construcción Moderna">
-            <h2 class="slide-in-bottom">Beneficios de la Construcción Moderna</h2>
-            <p class="fade-in-right">Descubre las ventajas de nuestras prácticas de construcción innovadoras:</p>
-            <ul class="highlight-list">
-                <li class="fade-in-bottom">Reducción de tiempos de entrega mediante tecnología avanzada</li>
-                <li class="fade-in-bottom">Eficiencia energética en todos los proyectos</li>
-                <li class="fade-in-bottom">Diseños adaptados a las necesidades del cliente</li>
-            </ul>
-        </section>
-
-        <!-- Galería de Imágenes -->
-        <section id="gallery" class="fade-in" aria-label="Galería de Imágenes">
-            <h2 class="slide-in-bottom">Galería de Imágenes</h2>
-            <div class="image-gallery">
-                <img src="assets/images/project1.jpg" alt="Proyecto 1">
-                <img src="assets/images/project2.jpg" alt="Proyecto 2">
-                <img src="assets/images/project3.jpg" alt="Proyecto 3">
-            </div>
-        </section>
-
-        <!-- Proyectos Destacados -->
-        <section id="featured-projects" class="fade-in" aria-label="Proyectos Destacados">
-            <h2>Proyectos Destacados</h2>
-            <p class="fade-in-right">Conoce algunos de nuestros trabajos más destacados en el área de construcción:</p>
-            <ul class="highlight-list">
-                <li class="slide-in-bottom">Edificio Residencial de Alta Gama</li>
-                <li class="slide-in-bottom">Infraestructura para Parques Industriales</li>
-                <li class="slide-in-bottom">Rehabilitación de Espacios Públicos</li>
-            </ul>
-        </section>
-
-        <!-- Formulario de Consulta -->
-        <section id="contact-construction" class="fade-in" aria-label="Formulario de Consulta">
-            <h2 class="slide-in-bottom">¿Tienes un Proyecto en Mente?</h2>
-            <p class="fade-in-right">Completa el formulario y nos pondremos en contacto contigo:</p>
-            <form>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+    <footer class="text-center py-4">
+        <div class="container">
+            <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <!-- Botón flotante para volver arriba -->
+    <!-- Botones Flotantes -->
     <button id="back-to-top" title="Volver arriba">↑</button>
+    <button id="go-back" title="Volver a Servicios">←</button>
+    <button id="go-home" title="Volver al Inicio">🏠</button>
 
-    <!-- Botón flotante para volver atrás o a la página de inicio -->
-    <button id="go-back" title="Volver atrás o a Inicio">←</button>
-
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>
