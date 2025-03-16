@@ -183,14 +183,27 @@ body {
 
 .service-item {
     margin-bottom: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Efecto de aumento */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra profunda */
 }
 
 .testimonial {
     background: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.05); /* Efecto de aumento */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra profunda */
 }
 
 /* --------------------- */
