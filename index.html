@@ -7,137 +7,191 @@
     <meta name="keywords" content="SSA Soluciones Civiles, Ingeniería Civil, Construcción">
     <meta name="author" content="SSA Soluciones Civiles">
     <title>Inicio - SSA Soluciones Civiles</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/animations.css">
+    <!-- Fuentes y estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header class="fade-in" aria-label="Barra de Navegación">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Encabezado -->
+    <header class="sticky-top" aria-label="Barra de Navegación">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand" href="index.html">SSA Soluciones Civiles</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Servicios</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="#hero" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Proyectos</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link">Equipo</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Logo y texto debajo de la barra -->
-    <div class="logo-text text-center mt-5 fade-in">
-        <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo">
-        <h1>Bienvenidos a SSA Soluciones Civiles</h1>
-    </div>
+    <!-- Héroe -->
+    <section id="hero" class="text-center text-white" style="background: url('assets/images/hero-modern.jpg') no-repeat center center/cover; padding: 150px 20px;">
+        <h1 class="display-4">Innovamos para construir el futuro</h1>
+        <p class="lead">Líderes en ingeniería civil con proyectos exitosos alrededor del mundo.</p>
+        <a href="#services" class="btn btn-lg btn-outline-light mt-4">Descubre más</a>
+    </section>
 
-    <main>
-        <!-- Sección del Héroe -->
-        <section id="hero" class="fade-in hero-section text-center">
-            <div class="hero-overlay zoom-in">
-                <h2 class="slide-in-bottom">Construimos el Futuro</h2>
-                <p class="slide-in-bottom">Soluciones integrales en ingeniería civil para proyectos de cualquier escala.</p>
-                <a href="services.html" class="btn btn-primary pulse">Descubre nuestros servicios</a>
-            </div>
-        </section>
+    <!-- Sobre Nosotros -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Sobre Nosotros</h2>
+            <p class="text-center">SSA Soluciones Civiles es una empresa comprometida con la excelencia, ofreciendo soluciones completas en ingeniería civil. Nuestra experiencia nos permite ejecutar proyectos de alta calidad y satisfacer las necesidades de cada cliente.</p>
+        </div>
+    </section>
 
-        <!-- Servicios Destacados -->
-        <section id="featured-services" class="fade-in py-5">
-            <div class="container">
-                <h2 class="slide-in-bottom text-center">Nuestros Servicios</h2>
-                <div class="row">
-                    <div class="col-md-3 text-center">
-                        <div class="service-item card shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Construcción</h3>
-                                <p class="card-text">Proyectos de construcción que combinan diseño innovador, materiales de alta calidad y ejecución eficiente.</p>
-                                <a href="construction.html" class="btn btn-secondary">Leer más</a>
-                            </div>
+    <!-- Servicios -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="assets/icons/construction-modern.png" class="card-img-top mx-auto mt-3" alt="Construcción" style="width: 80px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Construcción</h5>
+                            <p class="card-text">Desde diseño hasta ejecución, somos expertos en construcciones innovadoras y funcionales.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 text-center">
-                        <div class="service-item card shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Geotecnia</h3>
-                                <p class="card-text">Estudios y análisis geotécnicos para asegurar la estabilidad de tus proyectos desde el principio.</p>
-                                <a href="geotech.html" class="btn btn-secondary">Leer más</a>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="assets/icons/geotech-modern.png" class="card-img-top mx-auto mt-3" alt="Geotecnia" style="width: 80px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Geotecnia</h5>
+                            <p class="card-text">Análisis especializados para garantizar estabilidad y seguridad en tus proyectos.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 text-center">
-                        <div class="service-item card shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Remodelación</h3>
-                                <p class="card-text">Transformamos tus espacios en lugares modernos y funcionales con atención a cada detalle.</p>
-                                <a href="remodel.html" class="btn btn-secondary">Leer más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <div class="service-item card shadow-sm">
-                            <div class="card-body">
-                                <h3 class="card-title">Análisis Patológico</h3>
-                                <p class="card-text">Identificación y reparación de patologías estructurales para garantizar la seguridad de tus edificaciones.</p>
-                                <a href="pathology.html" class="btn btn-secondary">Leer más</a>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="assets/icons/remodel-modern.png" class="card-img-top mx-auto mt-3" alt="Remodelación" style="width: 80px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Remodelación</h5>
+                            <p class="card-text">Transformamos espacios para maximizar su funcionalidad y diseño estético.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Testimonios -->
-        <section id="testimonials" class="fade-in py-5 bg-light">
-            <div class="container">
-                <h2 class="slide-in-bottom text-center">Lo que dicen nuestros clientes</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="testimonial text-center card shadow-sm">
-                            <div class="card-body">
-                                <p>"SSA Soluciones Civiles transformó completamente nuestra oficina, estamos muy contentos con el resultado."</p>
-                                <p><strong>- Cliente Satisfecho</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="testimonial text-center card shadow-sm">
-                            <div class="card-body">
-                                <p>"El equipo de SSA es muy profesional y atento a los detalles. Recomiendo sus servicios."</p>
-                                <p><strong>- Empresa XYZ</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="testimonial text-center card shadow-sm">
-                            <div class="card-body">
-                                <p>"Gracias a SSA Soluciones Civiles, nuestro proyecto fue un éxito total."</p>
-                                <p><strong>- Cliente Contento</strong></p>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Proyectos Destacados -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Proyectos Destacados</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/images/project1.jpg" alt="Proyecto 1" class="img-fluid mb-3">
+                    <h5>Centro Comercial XYZ</h5>
+                    <p>Innovación y diseño para un espacio comercial moderno.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/project2.jpg" alt="Proyecto 2" class="img-fluid mb-3">
+                    <h5>Puente ABC</h5>
+                    <p>Infraestructura confiable y segura para la conectividad regional.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="text-center py-4">
+    <!-- Equipo -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Nuestro Equipo</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="assets/images/engineer1.jpg" alt="Ingeniero 1" class="rounded-circle mb-3" style="width: 150px;">
+                    <h5>María Pérez</h5>
+                    <p>Gerente de Proyectos</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="assets/images/engineer2.jpg" alt="Ingeniero 2" class="rounded-circle mb-3" style="width: 150px;">
+                    <h5>Juan Gómez</h5>
+                    <p>Especialista en Geotecnia</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="assets/images/engineer3.jpg" alt="Ingeniero 3" class="rounded-circle mb-3" style="width: 150px;">
+                    <h5>Sofía Martínez</h5>
+                    <p>Diseñadora Arquitectónica</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="py-5 bg-primary text-white">
+        <div class="container">
+            <h2 class="text-center">Contáctanos</h2>
+            <form class="mt-4">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Correo Electrónico">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                <button type="submit" class="btn btn-light btn-block">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
         <div class="container">
             <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+            <nav>
+                <a href="#hero" class="text-white mx-2">Inicio</a> |
+                <a href="#about" class="text-white mx-2">Sobre Nosotros</a> |
+                <a href="#services" class="text-white mx-2">Servicios</a> |
+                <a href="#projects" class="text-white mx-2">Proyectos</a> |
+                <a href="#contact" class="text-white mx-2">Contacto</a>
+            </nav>
         </div>
     </footer>
 
-    <!-- Botón flotante para volver arriba -->
-    <button id="back-to-top" title="Volver arriba">↑</button>
-
-    <!-- Botón flotante para volver a la página de servicios -->
-    <button id="go-back" title="Volver a Servicios">←</button>
-
+    <!-- Scripts -->
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/bootstrap.bundle.min.js"></script>
-    <script src="scripts/script.js"></script>
+    <script>
+        // Mostrar botones flotantes al desplazarse
+        const backToTop = document.getElementById("back-to-top");
+        const goBack = document.getElementById("go-back");
+
+        window.onscroll = () => {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTop.style.display = "block";
+                goBack.style.display = "block";
+            } else {
+                backToTop.style.display = "none";
+                goBack.style.display = "none";
+            }
+        };
+
+        // Funcionalidad del botón "Volver arriba"
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        // Funcionalidad del botón "Volver a Servicios"
+        goBack.addEventListener("click", () => {
+            window.location.href = "services.html";
+        });
+    </script>
+
+    <!-- Botones flotantes -->
+    <button id="back-to-top" title="Volver arriba">↑</button>
+    <button id="go-back" title="Volver a Servicios">←</button>
 </body>
 </html>
+
