@@ -4,102 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Servicios - SSA Soluciones Civiles">
-    <meta name="keywords" content="SSA Soluciones Civiles, Servicios, Ingeniería Civil">
+    <meta name="keywords" content="SSA Soluciones Civiles, Servicios, Ingeniería geologica">
     <meta name="author" content="SSA Soluciones Civiles">
     <title>Servicios - SSA Soluciones Civiles</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/extra-styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="fade-in" aria-label="Barra de Navegación">
-        <nav class="nav-bar slide-in-top">
-            <ul>
-                <li><a href="index.html" class="hover-grow">Inicio</a></li>
-                <li><a href="about.html" class="hover-grow">Sobre Nosotros</a></li>
-                <li><a href="services.html" class="hover-grow active">Servicios</a></li>
-                <li><a href="contact.html" class="hover-grow">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">SSA Soluciones Civiles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link active">Servicios</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <!-- Logo y texto debajo de la barra -->
-    <div class="logo-text">
-        <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo">
-        <h1>Servicios</h1>
-    </div>
-
     <main>
-        <!-- Sección del Héroe -->
-        <section id="hero" class="fade-in hero-section">
-            <div class="hero-overlay zoom-in">
-                <h2 class="slide-in-bottom">Soluciones Integrales para un Futuro Mejor</h2>
-                <p class="slide-in-bottom">Conoce nuestros servicios en construcción, geotecnia, remodelación e intervención estructural.</p>
-                <a href="contact.html" class="btn btn-primary pulse">Contáctanos</a>
+        <!-- Introducción -->
+        <section id="services-intro" class="fade-in py-5 bg-light">
+            <div class="container text-center">
+                <div class="logo-text mt-5 fade-in">
+                    <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo zoom-in">
+                    <h2 class="slide-in-bottom mt-4">Nuestros Servicios</h2>
+                    <p class="slide-in-bottom highlight-text">
+                        Ofrecemos soluciones integrales en ingeniería civil, diseñadas para cumplir con las expectativas de cada proyecto.
+                        Descubre cómo podemos ayudarte a convertir tus ideas en realidad.
+                    </p>
+                </div>
             </div>
         </section>
 
         <!-- Servicios Principales -->
-        <section id="services-overview" class="fade-in" aria-label="Servicios Principales">
-            <h2 class="slide-in-bottom">Nuestros Servicios</h2>
-            <p class="fade-in-left">En SSA Soluciones Civiles, ofrecemos soluciones de ingeniería civil de alta calidad diseñadas para satisfacer tus necesidades:</p>
-            <ul class="services-list">
-                <li class="fade-in-left"><a href="construction.html" class="btn btn-secondary">Construcción</a></li>
-                <li class="fade-in-right"><a href="geotech.html" class="btn btn-secondary">Geotecnia</a></li>
-                <li class="fade-in-left"><a href="remodel.html" class="btn btn-secondary">Remodelación</a></li>
-                <li class="fade-in-right"><a href="pathology.html" class="btn btn-secondary">Análisis Patológico</a></li>
-            </ul>
-        </section>
-
-        <!-- Detalles de Cada Servicio -->
-        <section id="service-details" class="fade-in" aria-label="Detalles de los Servicios">
-            <h2 class="slide-in-bottom">Detalles de los Servicios</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <h3>Construcción</h3>
-                    <p>Proyectos de construcción que combinan diseño innovador, materiales de alta calidad y ejecución eficiente.</p>
-                    <a href="construction.html" class="btn btn-primary">Leer más</a>
-                </div>
-                <div class="service-item">
-                    <h3>Geotecnia</h3>
-                    <p>Estudios y análisis geotécnicos para asegurar la estabilidad de tus proyectos desde el principio.</p>
-                    <a href="geotech.html" class="btn btn-primary">Leer más</a>
-                </div>
-                <div class="service-item">
-                    <h3>Remodelación</h3>
-                    <p>Transformamos tus espacios en lugares modernos y funcionales con atención a cada detalle.</p>
-                    <a href="remodel.html" class="btn btn-primary">Leer más</a>
-                </div>
-                <div class="service-item">
-                    <h3>Análisis Patológico</h3>
-                    <p>Identificación y reparación de patologías estructurales para garantizar la seguridad de tus edificaciones.</p>
-                    <a href="pathology.html" class="btn btn-primary">Leer más</a>
+        <section id="services-overview" class="fade-in py-5">
+            <div class="container">
+                <h3 class="slide-in-bottom text-center">Áreas de Especialización</h3>
+                <div class="row">
+                    <div class="col-md-3 text-center fade-in-left">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Construcción</h5>
+                                <p class="card-text">Proyectos que integran diseño y calidad para lograr resultados excepcionales.</p>
+                                <a href="construction.html" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-right"></i> Leer Más
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center zoom-in">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Geotecnia</h5>
+                                <p class="card-text">Estudios y análisis técnicos para garantizar estabilidad estructural.</p>
+                                <a href="geotech.html" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-right"></i> Leer Más
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center fade-in-right">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Remodelación</h5>
+                                <p class="card-text">Rediseño de espacios para modernizarlos y optimizar su funcionalidad.</p>
+                                <a href="remodel.html" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-right"></i> Leer Más
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center fade-in-right">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Análisis Patológico</h5>
+                                <p class="card-text">Identificación y reparación de problemas estructurales.</p>
+                                <a href="pathology.html" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-right"></i> Leer Más
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Beneficios de Trabajar con Nosotros -->
-        <section id="benefits" class="fade-in" aria-label="Beneficios de Trabajar con Nosotros">
-            <h2 class="slide-in-bottom">¿Por Qué Elegirnos?</h2>
-            <p class="fade-in-right">Estos son algunos beneficios que obtendrás al trabajar con SSA Soluciones Civiles:</p>
-            <ul class="highlight-list">
-                <li class="fade-in-left">Soluciones personalizadas para cada proyecto</li>
-                <li class="fade-in-left">Equipo altamente capacitado y comprometido</li>
-                <li class="fade-in-left">Uso de tecnologías innovadoras y materiales sostenibles</li>
-                <li class="fade-in-left">Compromiso con la calidad y la entrega puntual</li>
-            </ul>
+        <!-- Beneficios -->
+        <section id="benefits" class="fade-in py-5 bg-light">
+            <div class="container text-center">
+                <h3 class="slide-in-bottom">¿Por Qué Trabajar con Nosotros?</h3>
+                <ul class="highlight-list mt-4">
+                    <li class="fade-in-left"><i class="fas fa-check-circle"></i> Equipo altamente capacitado y experimentado</li>
+                    <li class="fade-in-left"><i class="fas fa-check-circle"></i> Enfoque en sostenibilidad y calidad</li>
+                    <li class="fade-in-left"><i class="fas fa-check-circle"></i> Uso de tecnología avanzada</li>
+                    <li class="fade-in-left"><i class="fas fa-check-circle"></i> Compromiso con la satisfacción del cliente</li>
+                </ul>
+            </div>
         </section>
+        <!-- Botón de Navegación -->
+                <div class="text-center mt-5">
+                    <button class="btn btn-secondary" onclick="location.href='index.html';">
+                        <i class="fas fa-arrow-left"></i> Regresar a inicio
+                    </button>
     </main>
 
-    <footer>
-        <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+    <footer class="text-center py-4">
+        <div class="container">
+            <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <!-- Botón flotante para volver arriba -->
-    <button id="back-to-top" title="Volver arriba">↑</button>
+    <!-- Botones Flotantes -->
+    <button id="back-to-top" title="Volver arriba" class="pulse" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+    <button id="go-home" title="Volver al Inicio" class="btn btn-primary" onclick="location.href='index.html';">
+        <i class="fas fa-home"></i> Inicio
+    </button>
 
-    <!-- Botón flotante para volver a la página principal -->
-    <button id="go-back" title="Volver a Inicio">←</button>
-
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>

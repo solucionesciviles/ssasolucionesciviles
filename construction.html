@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Construcción - SSA Soluciones Civiles">
-    <meta name="keywords" content="SSA Soluciones Civiles, Ingeniería Civil, Construcción">
+    <meta name="keywords" content="SSA Soluciones Civiles, Ingeniería geologica, Construcción">
     <meta name="author" content="SSA Soluciones Civiles">
     <title>Construcción - SSA Soluciones Civiles</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/extra-styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="fade-in" aria-label="Barra de Navegación">
@@ -22,7 +24,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link active">Servicios</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
                 </ul>
             </div>
@@ -30,11 +32,61 @@
     </header>
 
     <main>
-        <!-- Sección Construcción -->
-        <section id="construction" class="fade-in py-5">
+        <!-- Sección de Introducción -->
+        <section id="construction" class="fade-in py-5 bg-light">
             <div class="container">
-                <h2 class="slide-in-bottom text-center">Construcción</h2>
-                <p class="slide-in-bottom text-center">Proyectos de construcción que combinan diseño innovador, materiales de alta calidad y ejecución eficiente.</p>
+                <div class="logo-text text-center mt-5 fade-in">
+                    <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo zoom-in">
+                    <h2 class="slide-in-bottom text-center mt-4">Construcción</h2>
+                    <p class="slide-in-bottom text-center highlight-text">
+                        En SSA Soluciones Civiles, llevamos tus proyectos de construcción al siguiente nivel con innovación, materiales de calidad y una ejecución impecable. Desde viviendas hasta infraestructuras, garantizamos resultados excepcionales.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Destacados -->
+        <section id="featured-projects" class="fade-in py-5 bg-light">
+            <div class="container">
+                <h3 class="slide-in-bottom text-center">Proyectos Destacados</h3>
+                <div class="row">
+                    <div class="col-md-4 text-center fade-in-left">
+                        <div class="card shadow-sm">
+                            <img src="assets/images/project1.jpg" class="card-img-top" alt="Proyecto Residencial">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto Residencial</h5>
+                                <p class="card-text">Construcción de viviendas modernas con diseño funcional.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center zoom-in">
+                        <div class="card shadow-sm">
+                            <img src="assets/images/project2.jpg" class="card-img-top" alt="Infraestructura Urbana">
+                            <div class="card-body">
+                                <h5 class="card-title">Infraestructura Urbana</h5>
+                                <p class="card-text">Innovación en proyectos viales para mejorar la conectividad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center fade-in-right">
+                        <div class="card shadow-sm">
+                            <img src="assets/images/project3.jpg" class="card-img-top" alt="Edificio Corporativo">
+                            <div class="card-body">
+                                <h5 class="card-title">Edificio Corporativo</h5>
+                                <p class="card-text">Eficiencia y diseño moderno para espacios de trabajo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón de Navegación -->
+        <section id="back-to-services" class="py-5">
+            <div class="container text-center">
+                <button class="btn btn-secondary" onclick="location.href='services.html';">
+                    <i class="fas fa-arrow-left"></i> Regresar a Nuestros Servicios
+                </button>
             </div>
         </section>
     </main>
@@ -46,12 +98,14 @@
     </footer>
 
     <!-- Botones Flotantes -->
-    <button id="back-to-top" title="Volver arriba">↑</button>
-    <button id="go-back" title="Volver a Servicios">←</button>
-    <button id="go-home" title="Volver al Inicio">🏠</button>
+    <button id="back-to-top" title="Volver arriba" class="pulse" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+    <button id="go-home" title="Volver al Inicio" class="btn btn-primary" onclick="location.href='index.html';">
+        <i class="fas fa-home"></i> Inicio
+    </button>
 
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>

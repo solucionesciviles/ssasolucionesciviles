@@ -4,153 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Remodelación - SSA Soluciones Civiles">
-    <meta name="keywords" content="SSA Soluciones Civiles, Remodelación, Ingeniería Civil">
+    <meta name="keywords" content="SSA Soluciones Civiles, Remodelación, Ingeniería geologica">
     <meta name="author" content="SSA Soluciones Civiles">
     <title>Remodelación - SSA Soluciones Civiles</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/extra-styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="fade-in" aria-label="Barra de Navegación">
-        <nav class="nav-bar slide-in-top">
-            <ul>
-                <li><a href="index.html" class="hover-grow">Inicio</a></li>
-                <li><a href="services.html" class="hover-grow active">Servicios</a></li>
-                <li><a href="contact.html" class="hover-grow">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">SSA Soluciones Civiles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <!-- Logo y texto debajo de la barra -->
-    <div class="logo-text">
-        <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo">
-        <h1>Remodelación</h1>
-    </div>
-
     <main>
-        <!-- Sección del Héroe -->
-        <section id="hero" class="fade-in hero-section">
-            <div class="hero-overlay zoom-in">
-                <h2 class="slide-in-bottom">Renovando Espacios para el Futuro</h2>
-                <p class="slide-in-bottom">Expertos en remodelación, diseño y transformación de espacios.</p>
-                <a href="about.html" class="btn btn-primary pulse">Conócenos</a>
+        <!-- Introducción -->
+        <section id="remodel" class="fade-in py-5 bg-light">
+            <div class="container">
+                <div class="logo-text text-center mt-5 fade-in">
+                    <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo zoom-in">
+                    <h2 class="slide-in-bottom text-center mt-4">Remodelación</h2>
+                    <p class="slide-in-bottom text-center highlight-text">
+                        Transformamos espacios con diseños modernos, materiales innovadores y un enfoque en funcionalidad.
+                        Nuestro objetivo es crear ambientes que inspiren y mejoren la calidad de vida.
+                    </p>
+                </div>
             </div>
-        </section>
-
-        <!-- Beneficios de Remodelar -->
-        <section id="benefits" class="fade-in" aria-label="Beneficios de Remodelar">
-            <h2 class="slide-in-bottom">Beneficios de Remodelar</h2>
-            <ul class="highlight-list">
-                <li class="fade-in-left">Aumenta el valor de tu propiedad</li>
-                <li class="fade-in-left">Mejora la funcionalidad y estética de tus espacios</li>
-                <li class="fade-in-left">Adapta tu hogar o negocio a necesidades modernas</li>
-                <li class="fade-in-left">Contribuye a la sostenibilidad con materiales eficientes</li>
-            </ul>
         </section>
 
         <!-- Tipos de Proyectos -->
-        <section id="project-types" class="fade-in" aria-label="Tipos de Proyectos">
-            <h2 class="slide-in-bottom">Tipos de Proyectos de Remodelación</h2>
-            <div class="projects-grid">
-                <div class="project-item">
-                    <h3>Remodelaciones Residenciales</h3>
-                    <p>Transformamos casas en hogares modernos y funcionales.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Remodelaciones Comerciales</h3>
-                    <p>Diseñamos espacios que mejoran la experiencia del cliente.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Renovación de Espacios Públicos</h3>
-                    <p>Modernizamos áreas comunitarias para mayor confort y uso eficiente.</p>
+        <section id="project-types" class="fade-in py-5">
+            <div class="container">
+                <h3 class="slide-in-bottom text-center">Tipos de Proyectos</h3>
+                <div class="row">
+                    <div class="col-md-4 text-center fade-in-left">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Remodelaciones Residenciales</h5>
+                                <p class="card-text">Renovamos hogares con soluciones adaptadas a tus necesidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center zoom-in">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Remodelaciones Comerciales</h5>
+                                <p class="card-text">Diseñamos espacios funcionales para empresas modernas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center fade-in-right">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Renovación de Espacios Públicos</h5>
+                                <p class="card-text">Modernizamos áreas comunitarias para mayor uso y confort.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Materiales Innovadores -->
-        <section id="materials" class="fade-in" aria-label="Materiales Innovadores">
-            <h2 class="slide-in-bottom">Materiales Innovadores</h2>
-            <p class="fade-in-right">Utilizamos materiales de alta calidad y eficiencia para asegurar resultados duraderos y sostenibles:</p>
-            <ul class="highlight-list">
-                <li class="fade-in-left">Pisos y revestimientos modernos</li>
-                <li class="fade-in-left">Tecnología LED para iluminación eficiente</li>
-                <li class="fade-in-left">Pinturas ecológicas de bajo impacto ambiental</li>
-                <li class="fade-in-left">Vidrios térmicos y acústicos</li>
-            </ul>
         </section>
 
         <!-- Proceso de Trabajo -->
-        <section id="work-process" class="fade-in" aria-label="Proceso de Trabajo">
-            <h2 class="slide-in-bottom">Nuestro Proceso de Trabajo</h2>
-            <ol class="process-list">
-                <li class="fade-in-left">Visita inicial para evaluación de necesidades</li>
-                <li class="fade-in-left">Diseño conceptual y renderizado en 3D</li>
-                <li class="fade-in-left">Selección de materiales y planificación</li>
-                <li class="fade-in-left">Ejecución de obra y supervisión constante</li>
-                <li class="fade-in-left">Entrega final con garantía de calidad</li>
-            </ol>
-        </section>
-
-        <!-- Proyectos Destacados -->
-        <section id="featured-projects" class="fade-in" aria-label="Proyectos Destacados">
-            <h2 class="slide-in-bottom">Proyectos Destacados</h2>
-            <div class="projects-grid">
-                <div class="project-item">
-                    <img src="assets/images/remodel-project1.jpg" alt="Proyecto Remodelación 1">
-                    <h3>Renovación de Oficinas</h3>
-                    <p>Diseño y ejecución de espacios de trabajo modernos y funcionales.</p>
-                </div>
-                <div class="project-item">
-                    <img src="assets/images/remodel-project2.jpg" alt="Proyecto Remodelación 2">
-                    <h3>Remodelación de Viviendas</h3>
-                    <p>Transformación completa de interiores para mayor comodidad.</p>
-                </div>
+        <section id="work-process" class="fade-in py-5 bg-light">
+            <div class="container">
+                <h3 class="slide-in-bottom text-center">Nuestro Proceso</h3>
+                <ol class="process-list text-center">
+                    <li class="fade-in-left">Evaluación y diseño inicial.</li>
+                    <li class="fade-in-left">Selección de materiales de alta calidad.</li>
+                    <li class="fade-in-left">Planificación y ejecución precisa.</li>
+                    <li class="fade-in-left">Entrega y satisfacción garantizada.</li>
+                </ol>
             </div>
         </section>
 
-        <!-- Preguntas Frecuentes -->
-        <section id="faq" class="fade-in" aria-label="Preguntas Frecuentes">
-            <h2 class="slide-in-bottom">Preguntas Frecuentes</h2>
-            <details class="fade-in-right">
-                <summary>¿Qué tipo de remodelaciones realizan?</summary>
-                <p>Realizamos remodelaciones residenciales, comerciales e industriales adaptadas a tus necesidades.</p>
-            </details>
-            <details class="fade-in-right">
-                <summary>¿Cuánto tiempo toma una remodelación típica?</summary>
-                <p>La duración depende del alcance, pero generalmente varía entre 4 y 12 semanas.</p>
-            </details>
-            <details class="fade-in-right">
-                <summary>¿Ofrecen garantías en sus trabajos?</summary>
-                <p>Sí, ofrecemos garantía de calidad en todos nuestros proyectos.</p>
-            </details>
-        </section>
-
-        <!-- Formulario de Consulta -->
-        <section id="contact-remodel" class="fade-in" aria-label="Formulario de Consulta">
-            <h2 class="slide-in-bottom">Consulta sobre Remodelación</h2>
-            <p class="fade-in-right">Completa el formulario para iniciar tu proyecto de remodelación:</p>
-            <form>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="project-details">Detalles del Proyecto:</label>
-                <textarea id="project-details" name="details" rows="5" required></textarea>
-                <button type="submit" class="btn btn-primary">Enviar Consulta</button>
-            </form>
+        <!-- Botón de Navegación -->
+        <section id="back-to-services" class="py-5">
+            <div class="container text-center">
+                <button class="btn btn-secondary" onclick="location.href='services.html';">
+                    <i class="fas fa-arrow-left"></i> Regresar a Nuestros Servicios
+                </button>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+    <footer class="text-center py-4">
+        <div class="container">
+            <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <!-- Botón flotante para volver arriba -->
-    <button id="back-to-top" title="Volver arriba">↑</button>
+    <!-- Botones Flotantes -->
+    <button id="back-to-top" title="Volver arriba" class="pulse" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+    <button id="go-home" title="Volver al Inicio" class="btn btn-primary" onclick="location.href='index.html';">
+        <i class="fas fa-home"></i> Inicio
+    </button>
 
-    <!-- Botón flotante para volver a la página de servicios -->
-    <button id="go-back" title="Volver a Servicios">←</button>
-
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>

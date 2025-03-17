@@ -4,111 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contacto - SSA Soluciones Civiles">
-    <meta name="keywords" content="SSA Soluciones Civiles, Contacto, Ingeniería Civil">
+    <meta name="keywords" content="SSA Soluciones Civiles, Contacto, Ingeniería Geológica">
     <meta name="author" content="SSA Soluciones Civiles">
     <title>Contacto - SSA Soluciones Civiles</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/extra-styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="fade-in" aria-label="Barra de Navegación">
-        <nav class="nav-bar slide-in-top">
-            <ul>
-                <li><a href="index.html" class="hover-grow">Inicio</a></li>
-                <li><a href="about.html" class="hover-grow">Sobre Nosotros</a></li>
-                <li><a href="services.html" class="hover-grow">Servicios</a></li>
-                <li><a href="contact.html" class="hover-grow active">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">SSA Soluciones Civiles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <!-- Logo y texto debajo de la barra -->
-    <div class="logo-text">
-        <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo">
-        <h1>Contacto</h1>
-    </div>
-
     <main>
-        <!-- Sección del Héroe -->
-        <section id="hero" class="fade-in hero-section">
-            <div class="hero-overlay zoom-in">
-                <h2 class="slide-in-bottom">Estamos Aquí Para Ayudarte</h2>
-                <p class="slide-in-bottom">Contáctanos para cualquier consulta, proyecto o información adicional.</p>
-                <a href="#contact-form" class="btn btn-primary pulse">Escríbenos</a>
-            </div>
-        </section>
+        <!-- Logo y Título -->
+        <div class="logo-text text-center mt-5 fade-in">
+            <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo zoom-in">
+            <h1 class="slide-in-bottom text-center mt-4">Contacto</h1>
+        </div>
 
         <!-- Información de Contacto -->
-        <section id="contact-info" class="fade-in" aria-label="Información de Contacto">
-            <h2 class="slide-in-bottom">Información de Contacto</h2>
-            <div class="contact-card">
-                <p><strong>Dirección:</strong> Calle Falsa 123, Medellín, Colombia</p>
-                <p><strong>Teléfono:</strong> +57 123 456 7890</p>
-                <p><strong>Email:</strong> contacto@ssasolutions.com</p>
-                <p><strong>Horario:</strong> Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+        <section id="contact-info" class="fade-in py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="slide-in-bottom">Información de Contacto</h2>
+                <p class="fade-in-left">Comunícate con nosotros a través de los siguientes medios:</p>
+                <div class="row mt-4">
+                    <div class="col-md-6 fade-in-left">
+                        <p><strong>📍 Dirección:</strong> Calle 4sur#53-4, Medellín, Colombia</p>
+                        <p><strong>📞 Teléfono:</strong> +57 315-348-47-75</p>
+                    </div>
+                    <div class="col-md-6 fade-in-right">
+                        <p><strong>📧 Email:</strong> solucionesciviles.ssa@gmail.com</p>
+                        <p><strong>🕒 Horario:</strong> Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Formulario de Contacto -->
-        <section id="contact-form" class="fade-in" aria-label="Formulario de Contacto">
-            <h2 class="slide-in-bottom">Envíanos un Mensaje</h2>
-            <p class="fade-in-left">Si tienes alguna consulta o necesitas más información, no dudes en contactarnos.</p>
-            <form>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required class="zoom-in">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required class="zoom-in">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="5" required class="zoom-in"></textarea>
-                <button type="submit" class="btn btn-primary pulse">Enviar</button>
-            </form>
-        </section>
-
-        <!-- Ubicación en el Mapa -->
-        <section id="map" class="fade-in" aria-label="Ubicación en el Mapa">
-            <h2 class="slide-in-bottom">Nuestra Ubicación</h2>
-            <p class="fade-in-right">Encuéntranos en nuestras oficinas principales en Medellín, Colombia.</p>
-            <div class="map-container zoom-in">
-                <!-- Inserta un iframe de Google Maps aquí -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2947422711623!2d-75.56359028456717!3d6.251839695482369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442[...]
-                    width="100%"
-                    height="300"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy">
-                </iframe>
+        <section id="contact-form" class="fade-in py-5">
+            <div class="container">
+                <h2 class="slide-in-bottom text-center">Envíanos un Mensaje</h2>
+                <form class="mt-4" style="max-width: 600px; margin: 0 auto;">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary pulse w-100">Enviar</button>
+                </form>
             </div>
         </section>
 
-        <!-- Preguntas Frecuentes -->
-        <section id="faq" class="fade-in" aria-label="Preguntas Frecuentes">
-            <h2 class="slide-in-bottom">Preguntas Frecuentes</h2>
-            <details class="fade-in-right">
-                <summary>¿Cuánto tiempo tarda en responder el equipo?</summary>
-                <p>Generalmente respondemos dentro de las 24 horas hábiles.</p>
-            </details>
-            <details class="fade-in-right">
-                <summary>¿Tienen sucursales en otras ciudades?</summary>
-                <p>Por ahora, operamos desde Medellín, pero trabajamos en proyectos a nivel nacional.</p>
-            </details>
-            <details class="fade-in-right">
-                <summary>¿Cómo puedo agendar una reunión?</summary>
-                <p>Puedes enviarnos un mensaje a través del formulario o llamarnos para coordinar una cita.</p>
-            </details>
+        <!-- Mapa -->
+        <section id="map" class="fade-in py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="slide-in-bottom">Nuestra Ubicación</h2>
+                <div class="map-container mt-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2947422711623!2d-75.56359028456717!3d6.251839695482369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442..."
+                        width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
         </section>
+        <!-- Botón de Navegación -->
+                <div class="text-center mt-5">
+                    <button class="btn btn-secondary" onclick="location.href='index.html';">
+                        <i class="fas fa-arrow-left"></i> Regresar a inicio
+                    </button>
     </main>
 
-    <footer>
-        <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+    <footer class="text-center py-4">
+        <div class="container">
+            <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <!-- Botón flotante para volver arriba -->
-    <button id="back-to-top" title="Volver arriba">↑</button>
+    <!-- Botones Flotantes -->
+    <button id="back-to-top" title="Volver arriba" class="pulse" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+    <button id="go-home" title="Volver al Inicio" class="btn btn-primary" onclick="location.href='index.html';">
+        <i class="fas fa-home"></i> Inicio
+    </button>
 
-    <!-- Botón flotante para volver a la página de servicios -->
-    <button id="go-back" title="Volver a Servicios">←</button>
-
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>

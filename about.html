@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sobre Nosotros - SSA Soluciones Civiles">
-    <meta name="keywords" content="SSA Soluciones Civiles, Ingeniería Civil, Sobre Nosotros">
+    <meta name="keywords" content="SSA Soluciones Civiles, Ingeniería geologica, Sobre Nosotros">
     <meta name="author" content="SSA Soluciones Civiles">
     <title>Sobre Nosotros - SSA Soluciones Civiles</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/extra-styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="fade-in" aria-label="Barra de Navegación">
@@ -21,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active">Sobre Nosotros</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link">Servicios</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
                 </ul>
@@ -31,10 +33,51 @@
 
     <main>
         <!-- Sección Sobre Nosotros -->
-        <section id="about" class="fade-in py-5">
+        <section id="about" class="bg-light fade-in py-5">
             <div class="container">
-                <h2 class="slide-in-bottom text-center">Sobre Nosotros</h2>
-                <p class="slide-in-bottom text-center">SSA Soluciones Civiles es una empresa comprometida con la excelencia, ofreciendo soluciones completas en ingeniería civil. Nuestra experiencia nos permite ejecutar proyectos de alta calidad en tiempo y forma.</p>
+                <!-- Logo y Título -->
+                <div class="logo-text text-center mt-5">
+                    <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo zoom-in">
+                    <h2 class="slide-in-bottom text-center mt-4">Sobre Nosotros</h2>
+                    <p class="slide-in-bottom text-center highlight-text">
+                        SSA Soluciones Civiles es una empresa comprometida con la excelencia, ofreciendo soluciones completas en ingeniería geologica, construccion. Nuestra experiencia y dedicación nos permiten desarrollar proyectos de alta calidad que cumplen con las expectativas de nuestros clientes. Creemos en la innovación, la sostenibilidad y el compromiso como pilares fundamentales.
+                    </p>
+                </div>
+
+                <!-- Misión, Visión y Valores -->
+                <div class="row text-center mt-5">
+                    <div class="col-md-4 fade-in-left">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title">Misión</h3>
+                                <p class="card-text">Proveer soluciones de ingeniería geologica, y construccion sostenible con innovación y calidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 zoom-in">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title">Visión</h3>
+                                <p class="card-text">Ser líderes en el sector con enfoque en sostenibilidad y excelencia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 fade-in-right">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title">Valores</h3>
+                                <p class="card-text">Compromiso, responsabilidad, innovación y calidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón de Navegación -->
+                <div class="text-center mt-5">
+                    <button class="btn btn-secondary" onclick="location.href='index.html';">
+                        <i class="fas fa-arrow-left"></i> Regresar a inicio
+                    </button>
+                </div>
             </div>
         </section>
     </main>
@@ -46,12 +89,14 @@
     </footer>
 
     <!-- Botones Flotantes -->
-    <button id="back-to-top" title="Volver arriba">↑</button>
-    <button id="go-back" title="Volver a Servicios">←</button>
-    <button id="go-home" title="Volver al Inicio">🏠</button>
+    <button id="back-to-top" title="Volver arriba" class="pulse" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+    <button id="go-home" title="Volver al Inicio" class="btn btn-primary" onclick="location.href='index.html';">
+        <i class="fas fa-home"></i> Inicio
+    </button>
 
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>
