@@ -1,36 +1,34 @@
 // Script para funcionalidades adicionales
-document.addEventListener('DOMContentLoaded', () => {
-    // Efecto al desplazar en la barra de navegación
-    const navBar = document.querySelector('.nav-bar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navBar.classList.add('scrolled');
+$(document).ready(function () {
+    // Agregar efectos al desplazarse en la barra de navegación
+    const navBar = $('.navbar'); // Cambiado a la clase correcta de la barra de navegación
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            navBar.addClass('scrolled');
         } else {
-            navBar.classList.remove('scrolled');
+            navBar.removeClass('scrolled');
         }
     });
 
-    // Mostrar los botones cuando se hace scroll hacia abajo
-    window.onscroll = function() {
-        var backToTopButton = document.getElementById("back-to-top");
-        var goBackButton = document.getElementById("go-back");
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            backToTopButton.style.display = "block";
-            goBackButton.style.display = "block";
+    // Mostrar botones flotantes al desplazarse hacia abajo
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) {
+            $("#back-to-top").fadeIn();
+            $("#go-back").fadeIn();
         } else {
-            backToTopButton.style.display = "none";
-            goBackButton.style.display = "none";
+            $("#back-to-top").fadeOut();
+            $("#go-back").fadeOut();
         }
-    };
+    });
 
-    // Volver al inicio cuando se hace clic en el botón "Volver arriba"
-    document.getElementById("back-to-top").onclick = function() {
-        document.body.scrollTop = 0; // Para Safari
-        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
-    };
+    // Suavizar el desplazamiento al inicio cuando se hace clic en "Volver arriba"
+    $("#back-to-top").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 800); // Animación suave para volver arriba
+        return false;
+    });
 
-    // Volver a la página de servicios cuando se hace clic en el botón "Volver a Servicios"
-    document.getElementById("go-back").onclick = function() {
+    // Navegar a la página de servicios al hacer clic en "Volver a Servicios"
+    $("#go-back").click(function () {
         window.location.href = 'services.html'; // Redirigir a la página de servicios
-    };
+    });
 });
