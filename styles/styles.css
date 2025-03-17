@@ -1,251 +1,222 @@
-/* Estilos generales */
+/* Estilos Generales */
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #F9FAFB; /* Fondo suave */
+    color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #F9FAFB; /* Fondo claro y limpio */
-    overflow-x: hidden;
+    line-height: 1.7; /* Más espaciamiento para mejorar legibilidad */
 }
 
-/* Encabezado */
-header {
-    background-color: #1F2937; /* Azul oscuro elegante */
-    color: #FFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Enlaces */
+a {
+    color: #1E3A8A; /* Azul oscuro */
+    text-decoration: none;
+    font-weight: 600; /* Más definido */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-.navbar-brand {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #FFD700 !important; /* Dorado para destacar */
-}
-.nav-link {
-    color: #FFF !important;
-    margin-right: 10px;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-.nav-link:hover {
-    color: #FFD700 !important; /* Efecto hover en dorado */
+a:hover {
+    color: #3B82F6; /* Azul claro */
+    text-shadow: 0 2px 4px rgba(59, 130, 246, 0.6); /* Efecto de brillo */
 }
 
-/* Sección del héroe */
-#hero {
-    background: linear-gradient(to bottom, rgba(19, 35, 47, 0.8), rgba(19, 35, 47, 0.9)), 
-        url('assets/images/hero-modern.jpg') no-repeat center center/cover;
-    color: #FFF;
-    padding: 150px 20px;
-    text-align: center;
-}
-#hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 15px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-#hero p {
-    font-size: 1.3rem;
-    margin-bottom: 25px;
-}
-#hero .btn {
-    font-size: 1.2rem;
-    background-color: #FFD700;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-#hero .btn:hover {
-    background-color: #FFC107;
-    transform: scale(1.05);
-}
-
-/* Sección Sobre Nosotros */
-#about {
+/* Secciones */
+section {
     padding: 60px 20px;
-    background-color: #F3F4F6;
+    margin: 20px auto;
+    border-radius: 12px; /* Esquinas suaves */
+    background: linear-gradient(135deg, #E0F2FE, #3B82F6); /* Fondo degradado claro */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra elegante */
     text-align: center;
 }
-#about h2 {
-    font-size: 2.5rem;
-    color: #1F2937;
+section h2, section h3 {
+    color: #1E3A8A; /* Azul oscuro */
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-transform: uppercase; /* Diseño moderno */
+}
+section p {
+    color: #555; /* Gris suave */
+    font-size: 1.1rem;
+    line-height: 1.8;
     margin-bottom: 20px;
 }
-#about p {
-    font-size: 1.1rem;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-/* Sección Servicios */
-#services {
-    padding: 60px 20px;
-    text-align: center;
-}
-#services h2 {
-    font-size: 2.5rem;
-    color: #1F2937;
-    margin-bottom: 40px;
-}
+/* Tarjetas */
 .card {
+    background: #FFFFFF; /* Fondo blanco puro */
     border: none;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Esquinas redondeadas elegantes */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Sombras más suaves */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
 }
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2);
-}
-.card-img-top {
-    max-width: 100px;
-    margin: 20px auto;
+    transform: translateY(-5px); /* Movimiento sutil */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Mayor profundidad */
 }
 .card-title {
-    color: #1F2937;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-top: 10px;
+    font-weight: 700;
+    color: #1E3A8A; /* Azul oscuro */
+    font-size: 1.4rem;
+    margin-bottom: 10px;
 }
 .card-text {
-    font-size: 0.95rem;
-    color: #555;
-    margin-top: 10px;
+    color: #555; /* Gris suave */
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-/* Sección Proyectos */
-#projects {
-    background-color: #F9FAFB;
-    padding: 60px 20px;
-}
-#projects h2 {
-    font-size: 2.5rem;
-    color: #1F2937;
-    text-align: center;
-    margin-bottom: 40px;
-}
-#projects img {
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-#projects h5 {
-    margin-top: 15px;
-    font-size: 1.3rem;
-    color: #1F2937;
+/* Botones */
+button, .btn {
+    background-color: #3B82F6; /* Azul claro */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
     font-weight: 600;
+    border-radius: 30px; /* Diseño más suave */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    cursor: pointer;
 }
-#projects p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Sección Equipo */
-#team {
-    padding: 60px 20px;
-    text-align: center;
-}
-#team h2 {
-    font-size: 2.5rem;
-    color: #1F2937;
-    margin-bottom: 40px;
-}
-#team img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #FFD700;
-    margin-bottom: 15px;
-}
-#team h5 {
-    font-size: 1.2rem;
-    color: #1F2937;
-}
-#team p {
-    font-size: 1rem;
-    color: #555;
+button:hover, .btn:hover {
+    background-color: #2563EB; /* Azul más oscuro */
+    transform: scale(1.05); /* Zoom sutil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra interactiva */
 }
 
-/* Sección Contacto */
-#contact {
-    padding: 60px 20px;
-    background-color: #1F2937;
-    color: #FFF;
-    text-align: center;
+/* Barra de Navegación */
+.navbar {
+    background-color: #FFF;
+    border-bottom: 1px solid #DDD; /* Línea elegante */
+    padding: 15px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Sombra ligera */
 }
-#contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+.navbar-brand {
+    font-weight: 700;
+    color: #1E3A8A;
+    font-size: 1.5rem;
 }
-#contact .form-control {
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.navbar-nav .nav-link {
+    color: #555;
+    margin: 0 10px;
+    font-size: 1rem;
 }
-#contact .btn {
-    background-color: #FFD700;
-    border: none;
-    padding: 12px 30px;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+.navbar-nav .nav-link:hover {
+    color: #3B82F6;
+    text-shadow: 0 2px 4px rgba(59, 130, 246, 0.5); /* Efecto de brillo */
 }
-#contact .btn:hover {
-    background-color: #FFC107;
-    transform: scale(1.05);
+.company-logo {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Footer */
 footer {
+    background-color: #1E3A8A; /* Azul oscuro */
+    color: white;
     padding: 20px;
-    background-color: #000;
-    color: #FFF;
     text-align: center;
-}
-footer a {
-    color: #FFD700;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1rem;
-}
-footer a:hover {
-    text-decoration: underline;
+    font-size: 0.95rem;
+    margin-top: 30px;
 }
 
-/* Botones flotantes */
-#back-to-top, #go-back {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #FFD700;
-    color: #FFF;
+/* Botones Flotantes */
+/* Botón "Volver Arriba" */
+button#back-to-top {
+    background-color: #3B82F6;
+    color: white;
     border: none;
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    font-size: 20px;
     text-align: center;
     line-height: 50px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 80px; /* Ajuste para que no se superponga */
+    right: 20px; /* Posición fija a la derecha */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-#back-to-top:hover, #go-back:hover {
-    background-color: #FFC107;
+button#back-to-top:hover {
+    background-color: #2563EB;
     transform: scale(1.1);
+}
+
+/* Botón "Inicio" */
+button#go-home {
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 20px; /* Más abajo que "Volver Arriba" */
+    right: 20px; /* Posición fija a la derecha */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button#go-home:hover {
+    background-color: #2563EB;
+    transform: scale(1.1);
+}
+
+
+/* Listas de Beneficios */
+.highlight-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+.highlight-list li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 25px;
+    line-height: 1.8;
+}
+.highlight-list li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #3B82F6; /* Azul claro */
 }
 
 /* Animaciones */
 @keyframes fadeIn {
-    0% {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes slideInBottom {
+    from {
         opacity: 0;
         transform: translateY(20px);
     }
-    100% {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+.slide-in-bottom {
+    animation: slideInBottom 1s ease-out;
 }

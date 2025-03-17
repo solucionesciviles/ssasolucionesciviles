@@ -1,0 +1,92 @@
+/* Fondo con degradado */
+section {
+    background: linear-gradient(135deg, #3B82F6, #2563EB); /* Azul degradado */
+    color: white;
+    padding: 60px 20px;
+    border-radius: 12px; /* Esquinas más suaves */
+    margin: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra para profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+section:hover {
+    transform: scale(1.02); /* Interactividad sutil */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones personalizados */
+button, .btn {
+    background-color: #3B82F6; /* Azul claro */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase; /* Texto moderno */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+}
+button:hover, .btn:hover {
+    background-color: #2563EB; /* Azul más oscuro */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efecto dinámico */
+}
+
+/* Tarjetas con sombras */
+.card {
+    background-color: #FFFFFF; /* Contraste limpio */
+    border: none;
+    border-radius: 12px; /* Esquinas suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    margin: 15px;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card-title {
+    font-weight: 700;
+    color: #1E3A8A;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: capitalize; /* Legibilidad moderna */
+}
+.card-text {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Texto destacado */
+.highlight-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1E3A8A; /* Azul oscuro */
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Fondo claro para secciones */
+.bg-light {
+    background-color: #E0F2FE; /* Azul muy claro */
+    padding: 50px;
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+.bg-light h2, .bg-light h3 {
+    color: #1E3A8A; /* Azul oscuro */
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+.bg-light p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
