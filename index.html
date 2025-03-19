@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- META Tag Improvements for SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Inicio - SSA Soluciones Civiles">
-    <meta name="keywords" content="SSA Soluciones Civiles, Ingeniería Geológica, Construcción, Patologías y Soluciones Integradas">
+    <meta name="description" content="SSA Soluciones Civiles - Tu aliado en construcción, remodelación y análisis estructurales. Descubre nuestros servicios, testimonios, proyectos destacados y más.">
+    <meta name="keywords" content="construcción, remodelación, ingeniería geológica, análisis estructurales, obra blanca, obra negra, enchapes, acabados, sostenibilidad, proyectos destacados, cotización, SSA Soluciones Civiles">
     <meta name="author" content="SSA Soluciones Civiles">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self' https://code.jquery.com; style-src 'self' https://stackpath.bootstrapcdn.com; font-src 'self' https://cdnjs.cloudflare.com;">
+    <meta name="robots" content="index, follow">
+
+    <!-- Título del sitio -->
     <title>Inicio - SSA Soluciones Civiles</title>
+
+    <!-- Estilos Optimizados -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="styles/extra-styles.css">
+    
+    <!-- Frameworks CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Preload Google Fonts for Performance -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="fade-in" aria-label="Barra de Navegación">
+    <!-- Header con Navegación Fija -->
+    <header class="sticky-top fade-in" aria-label="Barra de Navegación">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html">SSA Soluciones Civiles</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar Navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -25,100 +39,209 @@
                     <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">Sobre Nosotros</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Proyectos</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Sección del Hero -->
-    <section id="hero" class="fade-in hero-section text-center">
-        <div class="hero-overlay zoom-in">
-            <img src="assets/images/logo.jpeg" alt="Logo de SSA Soluciones Civiles" class="company-logo zoom-in">
-            <h1 class="slide-in-bottom mt-4">Bienvenidos a SSA Soluciones Civiles</h1>
-            <p class="slide-in-bottom highlight-text">
-                Líderes en ingeniería geológica, remodelación y construcción, construyendo el futuro con innovación y excelencia.
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section text-center">
+        <div class="hero-overlay">
+            <h1 class="slide-in-bottom mt-4">Tu Aliado en Construcción y Remodelación</h1>
+            <p class="highlight-text">
+                Líderes en ingeniería geológica, remodelación y sostenibilidad. Transforma tus espacios con calidad y confianza.
             </p>
-            <a href="services.html" class="btn btn-primary pulse mt-3">Nuestros Servicios</a>
+            <a href="services.html" class="btn btn-primary pulse">Explorar Servicios</a>
         </div>
     </section>
 
-    <!-- Sección de Servicios Destacados -->
-    <section id="featured-services" class="fade-in py-5">
-        <div class="container">
-            <h2 class="slide-in-bottom text-center">Nuestros Servicios</h2>
-            <div class="row text-center">
-                <div class="col-md-3 fade-in-left">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Construcción</h5>
-                            <p class="card-text">Proyectos que integran diseño innovador y calidad excepcional.</p>
-                            <a href="construction.html" class="btn btn-secondary">
-                                <i class="fas fa-arrow-right"></i> Leer Más
-                            </a>
+    <!-- Calculadora de Costos -->
+    <section id="cost-calculator" class="fade-in py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="slide-in-bottom">Calcula el Costo de tu Proyecto</h2>
+            <p class="fade-in-left">Completa los campos y obtén una estimación rápida para tu proyecto de remodelación o construcción.</p>
+            <form class="mt-4">
+                <div class="form-group">
+                    <label for="project-type">Tipo de Proyecto:</label>
+                    <select class="form-control" id="project-type" required>
+                        <option value="remodelacion">Remodelación</option>
+                        <option value="construccion">Construcción</option>
+                        <option value="acabados">Acabados</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="area">Área en m²:</label>
+                    <input type="number" class="form-control" id="area" placeholder="Especifica el área aproximada" required>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Presupuesto Aproximado (COP):</label>
+                    <input type="number" class="form-control" id="budget" placeholder="Ejemplo: 5000000" required>
+                </div>
+                <button type="submit" class="btn btn-secondary pulse">Calcular</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section id="featured-projects" class="fade-in py-5">
+        <div class="container text-center">
+            <h2 class="slide-in-bottom">Proyectos Destacados</h2>
+            <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/project1.webp" class="d-block w-100" alt="Proyecto 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Proyecto Residencial</h5>
+                            <p>Casas modernas con acabados excepcionales.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/project2.webp" class="d-block w-100" alt="Proyecto 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Infraestructura Urbana</h5>
+                            <p>Carreteras y puentes construidos con precisión.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/project3.webp" class="d-block w-100" alt="Proyecto 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Edificio Corporativo</h5>
+                            <p>Espacios diseñados para la productividad empresarial.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 zoom-in">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Geotecnia</h5>
-                            <p class="card-text">Estudios y análisis de suelos para proyectos seguros y duraderos.</p>
-                            <a href="geotech.html" class="btn btn-secondary">
-                                <i class="fas fa-arrow-right"></i> Leer Más
-                            </a>
+                <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#projectsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="projects.html" class="btn btn-primary">Ver Más Proyectos</a>
+        </div>
+    </section>
+
+
+            <!-- Preguntas Frecuentes -->
+        <section id="faq" class="fade-in py-5">
+            <div class="container">
+                <h2 class="slide-in-bottom text-center">Preguntas Frecuentes</h2>
+                <div class="accordion mt-4" id="faqAccordion">
+                    <!-- Pregunta 1 -->
+                    <div class="card">
+                        <div class="card-header" id="faq1">
+                            <h5>
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    ¿Cuánto tiempo tarda en completarse un proyecto?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                El tiempo de finalización depende del alcance del proyecto. Sin embargo, trabajamos de manera eficiente para garantizar plazos cumplidos sin comprometer la calidad.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 fade-in-right">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Remodelación</h5>
-                            <p class="card-text">Rediseñamos espacios para ser modernos y funcionales.</p>
-                            <a href="remodel.html" class="btn btn-secondary">
-                                <i class="fas fa-arrow-right"></i> Leer Más
-                            </a>
+                    <!-- Pregunta 2 -->
+                    <div class="card">
+                        <div class="card-header" id="faq2">
+                            <h5>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    ¿Ofrecen consultas iniciales gratuitas?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                Sí, ofrecemos consultas iniciales gratuitas para evaluar tus necesidades y proponer soluciones adecuadas a tu proyecto.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 fade-in-right">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Análisis Patológico</h5>
-                            <p class="card-text">Identificación y solución de fallas estructurales.</p>
-                            <a href="pathology.html" class="btn btn-secondary">
-                                <i class="fas fa-arrow-right"></i> Leer Más
-                            </a>
+                    <!-- Pregunta 3 -->
+                    <div class="card">
+                        <div class="card-header" id="faq3">
+                            <h5>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    ¿Trabajan con materiales sostenibles?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                Sí, priorizamos el uso de materiales sostenibles y ecológicos en todos nuestros proyectos para minimizar el impacto ambiental.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pregunta 4 -->
+                    <div class="card">
+                        <div class="card-header" id="faq4">
+                            <h5>
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    ¿Ofrecen garantía en sus proyectos?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse4" class="collapse" aria-labelledby="faq4" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                Por supuesto, todos nuestros trabajos cuentan con garantía. Los plazos y condiciones se adaptan según el tipo de proyecto realizado.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Sección Sobre Nosotros -->
-    <section id="about" class="fade-in py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="slide-in-bottom">¿Quiénes Somos?</h2>
-            <p class="slide-in-bottom highlight-text">
-                SSA Soluciones Civiles es una empresa líder en ingeniería geológica, remodelación y análisis de patologías estructurales, comprometida con la sostenibilidad y excelencia.
-            </p>
-            <a href="about.html" class="btn btn-primary mt-3 pulse">
-                Conoce Más
-            </a>
-        </div>
-    </section>
-
-    <footer class="text-center py-4">
+        </section>
+    <!-- Llamado a la Acción (CTA) Final -->
+    <section id="cta-final" class="fade-in py-5 bg-dark text-white text-center">
         <div class="container">
-            <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
+            <h2 class="slide-in-bottom">¿Listo para Transformar tus Espacios?</h2>
+            <p class="highlight-text">Contáctanos hoy mismo para recibir una cotización personalizada y hacer realidad tus ideas.</p>
+            <a href="contact.html" class="btn btn-primary pulse mt-3">Contáctanos Ahora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Información de Contacto -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-primary">Contacto</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Medellín, Colombia</p>
+                    <p><i class="fas fa-phone-alt"></i> +57 315-348-4775</p>
+                    <p><i class="fas fa-envelope"></i> solucionesciviles.ssa@gmail.com</p>
+                </div>
+                <!-- Enlaces Rápidos -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-primary">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="projects.html">Proyectos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Redes Sociales -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-primary">Síguenos</h5>
+                    <a href="#" class="text-secondary"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-secondary mx-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-secondary"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <p class="mt-3">© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <!-- Botones Flotantes -->
-    <button id="back-to-top" title="Volver arriba" class="pulse" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
-    <button id="go-home" title="Volver al Inicio" class="btn btn-primary" onclick="location.href='index.html';">
-        <i class="fas fa-home"></i> Inicio
+    <button id="back-to-top" class="pulse" title="Volver arriba" aria-label="Volver arriba">↑</button>
+    <button id="go-home" class="btn btn-primary" title="Volver al Inicio" onclick="location.href='index.html';" aria-label="Volver al Inicio">
+        <i class="fas fa-home"></i>
     </button>
 
     <!-- Scripts -->

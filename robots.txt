@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /private/          # Prohíbe acceso a la carpeta privada
+Disallow: /admin/            # Prohíbe acceso a la carpeta admin
+Allow: /                     # Permite el acceso a todo lo demás
+
+Sitemap: https://solucionesciviles.github.io/ssasolucionesciviles/sitemap.xml
