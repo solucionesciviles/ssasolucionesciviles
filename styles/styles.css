@@ -1,222 +1,209 @@
-/* Estilos Generales */
+/* VARIABLES PARA COLORES Y ESTILOS GLOBAL */
+:root {
+    --primary-color: #3B82F6;          /* Azul claro */
+    --secondary-color: #2563EB;       /* Azul oscuro */
+    --accent-color: #E0F2FE;          /* Azul pálido */
+    --text-dark: #1E3A8A;             /* Texto primario */
+    --text-light: #555;               /* Texto secundario */
+    --background-light: #F9FAFB;      /* Fondo general */
+    --background-dark: #1E3A8A;       /* Fondo oscuro */
+    --button-hover-color: #2563EB;    /* Hover para botones */
+    --shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --transition-default: 0.3s ease;  /* Duración de transiciones */
+}
+
+/* ESTILOS GENERALES */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #F9FAFB; /* Fondo suave */
-    color: #333;
+    background-color: var(--background-light);
+    color: var(--text-light);
     margin: 0;
     padding: 0;
-    line-height: 1.7; /* Más espaciamiento para mejorar legibilidad */
+    line-height: 1.7;
+    scroll-behavior: smooth;
 }
 
-/* Enlaces */
+/* ENLACES */
 a {
-    color: #1E3A8A; /* Azul oscuro */
+    color: var(--text-dark);
     text-decoration: none;
-    font-weight: 600; /* Más definido */
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    font-weight: 600;
+    transition: color var(--transition-default), text-shadow var(--transition-default);
 }
 a:hover {
-    color: #3B82F6; /* Azul claro */
-    text-shadow: 0 2px 4px rgba(59, 130, 246, 0.6); /* Efecto de brillo */
+    color: var(--primary-color);
+    text-shadow: 0 2px 4px rgba(59, 130, 246, 0.6);
 }
 
-/* Secciones */
+/* SECCIONES */
 section {
     padding: 60px 20px;
     margin: 20px auto;
-    border-radius: 12px; /* Esquinas suaves */
-    background: linear-gradient(135deg, #E0F2FE, #3B82F6); /* Fondo degradado claro */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    box-shadow: var(--shadow-light);
     text-align: center;
+    transition: transform var(--transition-default), box-shadow var(--transition-default);
+}
+section:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-medium);
 }
 section h2, section h3 {
-    color: #1E3A8A; /* Azul oscuro */
+    color: var(--text-dark);
     font-weight: 700;
-    margin-bottom: 20px;
     font-size: 1.8rem;
-    text-transform: uppercase; /* Diseño moderno */
+    text-transform: uppercase;
 }
 section p {
-    color: #555; /* Gris suave */
+    color: var(--text-light);
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 20px;
 }
+.carousel-caption h5 {
+    font-weight: bold;
+    color: var(--text-dark);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.carousel-caption p {
+    font-size: 1rem;
+    color: var(--text-light);
+}
 
-/* Tarjetas */
+
+/* TARJETAS */
 .card {
-    background: #FFFFFF; /* Fondo blanco puro */
+    background: #FFFFFF;
     border: none;
-    border-radius: 12px; /* Esquinas redondeadas elegantes */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Sombras más suaves */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    box-shadow: var(--shadow-light);
+    transition: transform var(--transition-default), box-shadow var(--transition-default);
     margin: 15px;
     padding: 20px;
     text-align: center;
 }
 .card:hover {
-    transform: translateY(-5px); /* Movimiento sutil */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Mayor profundidad */
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
 }
 .card-title {
     font-weight: 700;
-    color: #1E3A8A; /* Azul oscuro */
-    font-size: 1.4rem;
+    color: var(--text-dark);
     margin-bottom: 10px;
+    font-size: 1.4rem;
 }
 .card-text {
-    color: #555; /* Gris suave */
+    color: var(--text-light);
     font-size: 1rem;
-    line-height: 1.6;
 }
 
-/* Botones */
+/* BOTONES */
 button, .btn {
-    background-color: #3B82F6; /* Azul claro */
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 12px 24px;
     font-size: 1rem;
     font-weight: 600;
-    border-radius: 30px; /* Diseño más suave */
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 10px;
-    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color var(--transition-default), transform var(--transition-default);
 }
 button:hover, .btn:hover {
-    background-color: #2563EB; /* Azul más oscuro */
-    transform: scale(1.05); /* Zoom sutil */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra interactiva */
+    background-color: var(--button-hover-color);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-medium);
 }
 
-/* Barra de Navegación */
+/* BARRAS DE NAVEGACIÓN */
 .navbar {
-    background-color: #FFF;
-    border-bottom: 1px solid #DDD; /* Línea elegante */
+    background-color: white;
+    border-bottom: 1px solid #DDD;
     padding: 15px 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+    box-shadow: var(--shadow-light);
 }
 .navbar-brand {
     font-weight: 700;
-    color: #1E3A8A;
+    color: var(--text-dark);
     font-size: 1.5rem;
 }
 .navbar-nav .nav-link {
-    color: #555;
+    color: var(--text-light);
     margin: 0 10px;
     font-size: 1rem;
 }
 .navbar-nav .nav-link:hover {
-    color: #3B82F6;
-    text-shadow: 0 2px 4px rgba(59, 130, 246, 0.5); /* Efecto de brillo */
-}
-.company-logo {
-    max-width: 150px;
-    max-height: 150px;
-    margin: 0 auto;
-    display: block;
+    color: var(--primary-color);
 }
 
-/* Footer */
+/* PIE DE PÁGINA */
 footer {
-    background-color: #1E3A8A; /* Azul oscuro */
+    background-color: var(--background-dark);
     color: white;
     padding: 20px;
     text-align: center;
     font-size: 0.95rem;
-    margin-top: 30px;
 }
 
-/* Botones Flotantes */
-/* Botón "Volver Arriba" */
-button#back-to-top {
-    background-color: #3B82F6;
+/* BOTONES FLOTANTES */
+#back-to-top, #go-home {
+    background-color: var(--primary-color);
     color: white;
-    border: none;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     font-size: 20px;
     text-align: center;
     line-height: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: fixed;
-    bottom: 80px; /* Ajuste para que no se superponga */
-    right: 20px; /* Posición fija a la derecha */
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    right: 20px;
+    box-shadow: var(--shadow-light);
+    transition: transform var(--transition-default), box-shadow var(--transition-default);
 }
-button#back-to-top:hover {
-    background-color: #2563EB;
+#back-to-top {
+    bottom: 80px;
+}
+#go-home {
+    bottom: 20px;
+}
+#back-to-top:hover, #go-home:hover {
     transform: scale(1.1);
 }
 
-/* Botón "Inicio" */
-button#go-home {
-    background-color: #3B82F6;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    bottom: 20px; /* Más abajo que "Volver Arriba" */
-    right: 20px; /* Posición fija a la derecha */
-    transition: background-color 0.3s ease, transform 0.3s ease;
+/* FORMULARIOS */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    box-shadow: var(--shadow-light);
+    transition: border-color var(--transition-default), box-shadow var(--transition-default);
 }
-button#go-home:hover {
-    background-color: #2563EB;
-    transform: scale(1.1);
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-medium);
+    outline: none;
 }
 
-
-/* Listas de Beneficios */
-.highlight-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 600px;
-}
-.highlight-list li {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    position: relative;
-    padding-left: 25px;
-    line-height: 1.8;
-}
+/* LISTAS */
 .highlight-list li:before {
     content: "✔";
-    position: absolute;
-    left: 0;
-    color: #3B82F6; /* Azul claro */
+    color: var(--primary-color);
+    margin-right: 8px;
 }
 
-/* Animaciones */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 15px;
     }
-    to {
-        opacity: 1;
+    .card {
+        margin: 10px;
+        padding: 15px;
     }
-}
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes slideInBottom {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.slide-in-bottom {
-    animation: slideInBottom 1s ease-out;
 }

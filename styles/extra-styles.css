@@ -1,92 +1,166 @@
-/* Fondo con degradado */
-section {
-    background: linear-gradient(135deg, #3B82F6, #2563EB); /* Azul degradado */
-    color: white;
-    padding: 60px 20px;
-    border-radius: 12px; /* Esquinas más suaves */
-    margin: 20px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra para profundidad */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-section:hover {
-    transform: scale(1.02); /* Interactividad sutil */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+:root {
+    /* Paleta de Colores */
+    --dark-bg: #1A202C;
+    --dark-section-bg: #2D3748;
+    --dark-text: #F7FAFC;
+    --dark-link: #63B3ED;
+    --dark-link-hover: #4299E1;
+
+    /* Gradientes */
+    --gradient-primary: linear-gradient(135deg, #2D3748, #4A5568);
+    --gradient-accent: linear-gradient(135deg, #63B3ED, #4299E1);
+
+    /* Estilos de Sombra */
+    --shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --shadow-heavy: 0 12px 24px rgba(0, 0, 0, 0.3);
+
+    /* Variables de Transición */
+    --transition-duration: 0.3s;
+    --transition-ease: ease-in-out;
+
+    /* Formularios */
+    --input-border: #DDD;
+    --input-focus: #63B3ED;
+
+    /* Barras de Progreso */
+    --progress-bg: #E2E8F0;
+    --progress-fill: #63B3ED;
+
+    /* Margen Responsive */
+    --responsive-padding: 40px 15px;
 }
 
-/* Botones personalizados */
-button, .btn {
-    background-color: #3B82F6; /* Azul claro */
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase; /* Texto moderno */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 10px;
-}
-button:hover, .btn:hover {
-    background-color: #2563EB; /* Azul más oscuro */
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efecto dinámico */
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
 }
 
-/* Tarjetas con sombras */
-.card {
-    background-color: #FFFFFF; /* Contraste limpio */
-    border: none;
-    border-radius: 12px; /* Esquinas suaves */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 20px;
-    margin: 15px;
-}
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.card-title {
-    font-weight: 700;
-    color: #1E3A8A;
-    font-size: 1.4rem;
-    text-align: center;
-    text-transform: capitalize; /* Legibilidad moderna */
-}
-.card-text {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: center;
+.dark-mode a {
+    color: var(--dark-link);
 }
 
-/* Texto destacado */
-.highlight-text {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #1E3A8A; /* Azul oscuro */
-    margin: 20px 0;
-    text-align: center;
+.dark-mode a:hover {
+    color: var(--dark-link-hover);
 }
 
-/* Fondo claro para secciones */
-.bg-light {
-    background-color: #E0F2FE; /* Azul muy claro */
-    padding: 50px;
+.dark-mode section {
+    background: var(--gradient-primary);
+    box-shadow: var(--shadow-medium);
+}
+
+.dark-mode .card {
+    background: var(--dark-section-bg);
+    color: var(--dark-text);
+    box-shadow: var(--shadow-light);
+}
+
+.dark-mode .card:hover {
+    box-shadow: var(--shadow-medium);
+}
+
+.dark-mode button, .dark-mode .btn {
+    background-color: var(--dark-section-bg);
+    color: var(--dark-text);
+    transition: background-color var(--transition-duration) var(--transition-ease);
+}
+
+.dark-mode button:hover, .dark-mode .btn:hover {
+    background-color: var(--dark-bg);
+}
+
+.carousel img {
+    max-width: 100%; /* Ajusta el tamaño para que no exceda el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 12px;
-    margin: 20px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    text-align: center;
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.bg-light h2, .bg-light h3 {
-    color: #1E3A8A; /* Azul oscuro */
-    font-weight: 700;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+
+.carousel img:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-medium);
 }
-.bg-light p {
-    color: #333;
+
+/* Formularios */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
     font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 15px;
+    box-shadow: var(--shadow-light);
+    transition: border-color var(--transition-duration), box-shadow var(--transition-duration) var(--transition-ease);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: var(--input-focus);
+    box-shadow: var(--shadow-medium);
+}
+
+/* Botones de Animación */
+button:hover, .btn:hover {
+    transform: scale(1.03);
+    box-shadow: var(--shadow-medium);
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+/* Barras de Progreso */
+.progress-bar {
+    width: 100%;
+    background-color: var(--progress-bg);
+    border-radius: 50px;
+    overflow: hidden;
+    height: 15px;
+    margin: 20px 0;
+}
+
+.progress-bar-inner {
+    height: 100%;
+    width: var(--progress-percent, 70%);
+    background-color: var(--progress-fill);
+    transition: width 0.4s var(--transition-ease);
+}
+
+/* Efectos Hover para Imágenes */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-light);
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+/* Separadores Horizontales */
+.hr-primary {
+    border: none;
+    height: 2px;
+    background: var(--gradient-accent);
+    margin: 20px 0;
+    transition: background var(--transition-duration) var(--transition-ease);
+}
+
+/* Elementos Responsivos */
+@media (max-width: 768px) {
+    section {
+        padding: var(--responsive-padding);
+    }
+    .card {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    /* Garantiza que las imágenes del carrusel también se ajusten en pantallas pequeñas */
+    .carousel img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Reducción de Movimiento para Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
 }
