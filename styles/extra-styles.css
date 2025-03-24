@@ -50,6 +50,20 @@ body.dark-mode {
     box-shadow: var(--shadow-medium);
 }
 
+.navbar-logo {
+    width: 50px; /* Tamaño estándar */
+    height: auto;
+    max-height: 50px; /* Altura máxima para mantener proporción */
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        width: 40px; /* Tamaño reducido para pantallas pequeñas */
+        max-height: 40px;
+    }
+}
+
+
 .dark-mode .card {
     background: var(--dark-section-bg);
     color: var(--dark-text);
@@ -82,6 +96,7 @@ body.dark-mode {
     transform: scale(1.05);
     box-shadow: var(--shadow-medium);
 }
+
 
 /* Formularios */
 input[type="text"], input[type="email"], textarea {
@@ -162,5 +177,32 @@ img:hover {
     * {
         animation: none !important;
         transition: none !important;
+    }
+}
+/* Ajuste para el logo en la barra de navegación */
+.navbar-logo {
+    width: 50px;
+    height: auto;
+    max-height: 50px;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        width: 40px;
+        max-height: 40px;
+    }
+}
+
+/* Ajuste para los logos de las secciones de introducción */
+.intro-logo {
+    width: 150px;
+    height: auto;
+    max-height: 150px;
+}
+
+@media (max-width: 768px) {
+    .intro-logo {
+        width: 120px;
+        max-height: 120px;
     }
 }
