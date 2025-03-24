@@ -26,8 +26,11 @@
     <!-- Cabecera -->
     <header class="fade-in">
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-            <a class="navbar-brand" href="index.html">SSA Soluciones Civiles</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.jpg" alt="Logo de SSA Soluciones Civiles" class="navbar-logo d-inline-block align-text-top mr-2">
+                SSA Soluciones Civiles
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,7 +47,7 @@
     <!-- Introducción -->
     <section id="construction" class="bg-light fade-in py-5 text-center">
         <div class="container">
-            <img src="assets/images/logo.webp" alt="Logo SSA Soluciones Civiles" class="company-logo zoom-in mb-3" loading="lazy">
+            <img src="assets/images/logo.jpg" alt="Logo de SSA Soluciones Civiles" class="intro-logo zoom-in mb-4" loading="lazy">
             <h2 class="slide-in-bottom">Construcción</h2>
             <p class="highlight-text">
                 En SSA Soluciones Civiles, llevamos tus proyectos al siguiente nivel con innovación, materiales de alta calidad y ejecución impecable.
@@ -121,6 +124,19 @@
     <button id="back-to-top" class="pulse" title="Volver arriba" aria-label="Volver arriba">↑</button>
 
     <!-- Scripts -->
+<script>
+    // Seleccionar el botón flotante
+    const backToTopButton = document.getElementById("back-to-top");
+
+    // Agregar un evento de clic
+    backToTopButton.addEventListener("click", function () {
+        // Desplazarse suavemente hasta la parte superior
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth", // Animación suave
+        });
+    });
+</script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>

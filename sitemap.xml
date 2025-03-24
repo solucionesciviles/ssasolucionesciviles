@@ -26,9 +26,8 @@
         <priority>0.6</priority>
     </url>
     <url>
-    <loc>https://www.tusitioweb.com/projects.html</loc>
-    <lastmod>2025-03-20</lastmod>
-    <priority>0.8</priority>
-</url>
-
+        <loc>https://solucionesciviles.github.io/ssasolucionesciviles/projects.html</loc>
+        <lastmod>2025-03-20</lastmod>
+        <priority>0.8</priority>
+    </url>
 </urlset>

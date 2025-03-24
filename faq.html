@@ -15,9 +15,12 @@
 <body>
     <!-- Cabecera -->
     <header class="fade-in">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">SSA Soluciones Civiles</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.jpg" alt="Logo SSA Soluciones Civiles" class="navbar-logo d-inline-block align-text-top mr-2">
+                SSA Soluciones Civiles
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,6 +36,7 @@
 
     <!-- Contenido Principal -->
     <main class="container py-5">
+        <img src="assets/images/logo.jpg" alt="Logo de SSA Soluciones Civiles" class="company-logo zoom-in mb-4" loading="lazy">
         <h1 class="text-center fade-in">Preguntas Frecuentes</h1>
         <p class="text-center fade-in">Encuentra respuestas rápidas a las dudas más comunes sobre nuestros servicios.</p>
 
@@ -98,7 +102,7 @@
     </main>
 
     <!-- Pie de Página -->
-    <footer class="text-center py-4">
+    <footer class="text-center py-4 bg-dark text-white">
         <div class="container">
             <p>© 2025 SSA Soluciones Civiles. Todos los derechos reservados.</p>
             <a href="privacy.html" class="text-muted">Política de privacidad</a>
@@ -106,6 +110,19 @@
     </footer>
 
     <!-- Scripts -->
+<script>
+    // Seleccionar el botón flotante
+    const backToTopButton = document.getElementById("back-to-top");
+
+    // Agregar un evento de clic
+    backToTopButton.addEventListener("click", function () {
+        // Desplazarse suavemente hasta la parte superior
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth", // Animación suave
+        });
+    });
+</script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
